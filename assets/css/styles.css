@@ -1,0 +1,120 @@
+body {
+  background-color: #2a2f4d;
+  color: #4a4e69;
+  padding: 20px;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: auto;
+  background: #fdf5e6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.text-repartido {
+  text-wrap: balance;
+}
+
+.ciudad {
+  color: #4a5585;
+  font-weight: 900;
+}
+
+.jugadores, .paneles {
+  display: grid;
+  gap: 20px;
+}
+
+.jugadores {
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+}
+
+.inputJugador {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-weight: bolder;
+}
+
+.inputJugador::placeholder {
+  font-weight: initial;
+}
+
+.inputJugador:hover {
+  border-color: #4a4e69;
+}
+
+.inputJugador:focus {
+  border-color: #4a5585;
+}
+
+.inputJugador:disabled {
+  background-color: #eee;
+  color: #4a4e69;
+  pointer-events: none;
+}
+
+.paneles {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#cuadroResultado {
+  border-radius: 8px;
+  padding: 15px 20px;
+  border: 2px solid #ddd;
+  background-color: white;
+}
+
+#cuadroResultado.deshabilitado {
+  background-color: #eee;
+}
+
+#ganador {
+  font-size: 1.5rem;
+  color: #c79d2a;
+  font-weight: bold;
+}
+
+.boton {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a5585;
+  color: white;
+  font-weight: bold;
+}
+
+.boton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  display: none;
+}
+
+#dialogoAvisos {
+  border-width: 2px;
+  border-radius: 8px;
+  background-color: #fdf5e6;
+  max-width: calc(100% - 80px);
+  max-height: calc(100% - 80px);
+}
+
+#dialogoAvisos::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#botonContinuar {
+  padding: 10px 24px;
+}
+
+@media (max-width: 750px) {
+  .jugadores {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .paneles {
+    grid-template-columns: 1fr;
+  }
+}

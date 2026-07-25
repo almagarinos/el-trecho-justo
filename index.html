@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow">
+        <title>El Trecho Justo</title>
+        <meta name="description" content="Concurso familiar, similar a 'El Precio Justo', donde acertar distancias entre ciudades.">
+
+        <!-- Estilos -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css?v=1.0">
+        
+    </head>
+
+    <body>
+
+        <div class="contenedor">
+
+            <h3 class="text-repartido text-center mb-3">🌎 El Trecho Justo 🌍</h3>
+            <p class="text-repartido text-center mb-3">¡Estimen la distancia entre dos ciudades! 📏 La que volaría un dron en línea recta.</p>
+            <h3 class="text-repartido text-center mb-3">
+                ¿Cuántos kilómetros hay entre <span id="ciudadA" class="ciudad"></span>
+                 y <span id="ciudadB" class="ciudad"></span>?
+            </h3>
+
+            <!-- Estamos suponiendo que hay 4 jugadores, pero ese número deberá ser dinámico -->
+            <div class="jugadores">
+                <div class="jugador">
+                    <h5>Jugador 1:</h5>
+                    <input type="number" class="inputJugador" placeholder="Cifra en km" min="1" max="20037">
+                </div>
+
+                <div class="jugador">
+                    <h5>Jugador 2:</h5>
+                    <input type="number" class="inputJugador" placeholder="Cifra en km" min="1" max="20037">
+                </div>
+
+                <div class="jugador">
+                    <h5>Jugador 3:</h5>
+                    <input type="number" class="inputJugador" placeholder="Cifra en km" min="1" max="20037">
+                </div>
+
+                <div class="jugador">
+                    <h5>Jugador 4:</h5>
+                    <input type="number" class="inputJugador" placeholder="Cifra en km" min="1" max="20037">
+                </div>
+            </div>
+
+            <div class="paneles">                
+                <div id="cuadroResultado" class="deshabilitado"></div>                
+
+                <button class="boton" id="botonRespuesta">
+                    VER LA DISTANCIA 📐
+                </button>
+
+                <button class="boton" id="botonPregunta">
+                    NUEVA PREGUNTA 🗺
+                </button>
+            </div>
+
+        </div>
+
+        <dialog id="dialogoAvisos">
+            <h3>Atención:</h3>
+            <p id="textoAviso"></p>
+            <button class="boton" id="botonContinuar">CONTINUAR</button>
+        </dialog>
+
+        <script src="assets/js/datos-ciudades.js"></script>
+        <script src="assets/js/app.js?v=1.0"></script>
+
+    </body>
+
+</html>
