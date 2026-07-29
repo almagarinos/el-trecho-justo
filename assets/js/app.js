@@ -151,17 +151,14 @@ function comprobarRespuesta() {
     }
   }
 
-  // Estamos suponiendo que hay 4 jugadores, pero ese número deberá ser dinámico
-  if ( respuestasJugador[0] === respuestasJugador[1] ||
-       respuestasJugador[0] === respuestasJugador[2] ||
-       respuestasJugador[0] === respuestasJugador[3] ||
-       respuestasJugador[1] === respuestasJugador[2] ||
-       respuestasJugador[1] === respuestasJugador[3] ||
-       respuestasJugador[2] === respuestasJugador[3] )
-  {
-    txtAviso.innerHTML = "Eviten las respuestas repetidas entre jugadores. No puede haber empate.";
-    dialogAvisos.showModal();
-    return;
+  // Comprobamos que no se repite ninguna respuesta entre todos los jugadores, sean cuantos sean
+  respuestasJugador.sort((a, b) => a - b); // Primero ordenamos todas las respuestas de menor a mayor
+  for (let i = 1; i < NUM_JUGADORES; i++) { // Si hay respuestas iguales, ahora serán consecutivas por el nuevo orden
+    if ( respuestasJugador[i - 1] === respuestasJugador[i] ) { // Detectamos si se repiten entre cada dos consecutivas
+      txtAviso.innerHTML = "Eviten las respuestas repetidas entre jugadores. No puede haber empate.";
+      dialogAvisos.showModal();
+      return;
+    }
   }
 
   // Gestionamos botones e inputs para evitar cambiar las respuestas
@@ -187,22 +184,21 @@ function comprobarRespuesta() {
       }
   }
 
-  // Estamos suponiendo que hay 4 jugadores, pero ese número deberá ser dinámico
+  // Preparamos cada renglón donde indicaremos el margen de error de cada jugador
+  let margenesJugadores = ``;
+  for (let i = 0; i < NUM_JUGADORES; i++) {
+    margenesJugadores = margenesJugadores + `
+    <p class="mb-1">
+      - Margen del jugador ${i + 1}: <strong>${erroresJugador[i]} km</strong>
+    </p>
+    `;
+  }
+
+  // Generamos el texto del resultado final con todos los márgenes
   campoResultado.classList.remove("deshabilitado");
   campoResultado.innerHTML = `
     <h3 class="mb-1">Distancia: <strong>${distanciaCorrecta} km</strong></h3>
-    <p class="mb-1">
-      - Margen del jugador 1: <strong>${erroresJugador[0]} km</strong>
-    </p>
-    <p class="mb-1">
-      - Margen del jugador 2: <strong>${erroresJugador[1]} km</strong>
-    </p>
-    <p class="mb-1">
-      - Margen del jugador 3: <strong>${erroresJugador[2]} km</strong>
-    </p>
-    <p class="mb-1">
-      - Margen del jugador 4: <strong>${erroresJugador[3]} km</strong>
-    </p>
+  ` + margenesJugadores + `
     <div id="ganador">🏆 Gana el jugador ${jugadorGanador}</div>
   `;
 }
