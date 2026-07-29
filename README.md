@@ -5,7 +5,7 @@ Juego familiar, inspirado en el popular concurso de televisión "El Precio Justo
 Por tanto, cada jugador debe estimar la longitud entre dos puntos geográficos, en línea recta, sobre la superficie terrestre. Es decir, hay que calcular mentalmente la distancia más corta que volaría un dron desde el centro de una ciudad hasta el centro de la otra.
 
 
-## 📈 Versión 1.0.1
+## 📈 Versión 1.0.2
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
 ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)

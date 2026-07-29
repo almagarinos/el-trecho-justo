@@ -151,10 +151,13 @@ function comprobarRespuesta() {
     }
   }
 
+  // Operador spread para evitar modificar el orden del array original en la siguiente reordenación
+  let copiaRespuestas = [...respuestasJugador];
+
   // Comprobamos que no se repite ninguna respuesta entre todos los jugadores, sean cuantos sean
-  respuestasJugador.sort((a, b) => a - b); // Primero ordenamos todas las respuestas de menor a mayor
+  copiaRespuestas.sort((a, b) => a - b); // Primero reordenamos con sort() todas las respuestas de menor a mayor
   for (let i = 1; i < NUM_JUGADORES; i++) { // Si hay respuestas iguales, ahora serán consecutivas por el nuevo orden
-    if ( respuestasJugador[i - 1] === respuestasJugador[i] ) { // Detectamos si se repiten entre cada dos consecutivas
+    if ( copiaRespuestas[i - 1] === copiaRespuestas[i] ) { // Detectamos si se repiten entre cada dos consecutivas
       txtAviso.innerHTML = "Eviten las respuestas repetidas entre jugadores. No puede haber empate.";
       dialogAvisos.showModal();
       return;
@@ -168,7 +171,7 @@ function comprobarRespuesta() {
     entradasJugador[i].disabled = true;
   }
 
-  // Cálculo del error respecto a la respuesta correcta
+  // Cálculo del error respecto a la respuesta correcta, manteniendo el mismo orden original de respuestas de jugadores
   let erroresJugador = new Array(NUM_JUGADORES);
   for (let i = 0; i < NUM_JUGADORES; i++) {
     erroresJugador[i] = Math.abs(respuestasJugador[i] - distanciaCorrecta);
