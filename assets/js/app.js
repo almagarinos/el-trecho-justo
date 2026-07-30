@@ -6,18 +6,24 @@ const campoResultado = document.getElementById("cuadroResultado");
 const dialogAvisos = document.querySelector('#dialogoAvisos');
 const txtAviso = document.querySelector('#textoAviso');
 const btnContinuar = document.querySelector('#botonContinuar');
-const puestosDeJugador = document.getElementsByClassName("jugador");
-const NUM_JUGADORES = puestosDeJugador.length; // Número total de jugadores
+const dialogNumJugadores = document.querySelector('#dialogoNumJugadores');
+const btnConfirmar = document.querySelector('#botonConfirmar');
+//const puestosDeJugador = document.getElementsByClassName("jugador");
+const paneldeJugadores = document.getElementById("panelJugadores");
+//const NUM_JUGADORES = puestosDeJugador.length; // Número total de jugadores
+let NUM_JUGADORES; // Número total de jugadores
 //const seleccionCiudades = ciudades; // Todas las disponibles en datos-ciudades.js
 
 // Lo siguiente es la alternativa a lo anterior, donde se hace un filtrado de ciudades
 const seleccionCiudades = [];
 for (let i = 0; i < ciudades.length; i++) {
-  if (ciudades[i].pais == "España") { // Aquí seleccionamos sólo las españolas
+  // Aquí seleccionamos sólo las españolas
+  if (ciudades[i].pais == "España") {
     seleccionCiudades.push(ciudades[i]);
   }
   /*
-  if (ciudades[i].continente == "África") { // Se podrían añadir como queramos
+  // Se podrían añadir como queramos
+  if (ciudades[i].continente == "África") {
     seleccionCiudades.push(ciudades[i]);
   }
   */
@@ -208,14 +214,80 @@ function comprobarRespuesta() {
 
 
 
+// Crea el HTML con todos los puestos de jugador con sus casillas de input
+function crearPanelDeJugadores ( numJugadores ) {
+  // Preparamos cada panel de jugador
+  let panelesJugadores = ``;
+  for (let i = 0; i < NUM_JUGADORES; i++) {
+    panelesJugadores = panelesJugadores + `
+      <div class="jugador">
+          <h5>Jugador ${i + 1}:</h5>
+          <input type="number" class="inputJugador" placeholder="Cifra en km" min="1" max="20037">
+      </div>
+    `;
+  }
+
+  // Los añadimos a la parte correspondiente en index.html
+  paneldeJugadores.innerHTML = panelesJugadores;
+}
+
+
+
+// Crea el tablero de jugadores en función del número de participantes
+function crearPartida() {
+  // Recogemos el dato del número de jugadores
+  const casillaNumJugadores = document.getElementById("inputNumJugadores");
+
+  // Comprobamos que se ha rellenado esa casilla de respuesta  
+  if ( casillaNumJugadores.value === "") {
+    txtAviso.innerHTML = "Introduzca el número de jugadores. Use sólo dígitos del 2 al 16.";
+    dialogAvisos.showModal();
+    return;
+  }
+
+  // Convertimos en formato número dicha respuesta para poder operar
+  let numeroJugadores = Number(casillaNumJugadores.value); // Podrá ser NUM_JUGADORES en el futuro
+
+  // Comprobamos que la respuesta es válida  
+  if ( !Number.isInteger(numeroJugadores) || numeroJugadores < 2 ) {
+    txtAviso.innerHTML = `La cifra debe ser un número entero mayor que 1.`;
+    dialogAvisos.showModal();
+    return;
+  } else if (numeroJugadores > 16) {
+    txtAviso.innerHTML = `La cifra supera el máximo de 16 jugadores posibles.`;
+    dialogAvisos.showModal();
+    return;
+  }
+
+  // Asignamos ese número a la variable global
+  NUM_JUGADORES = numeroJugadores;
+
+  // Gestionamos el inputs para evitar cambiar la respuesta
+  casillaNumJugadores.disabled = true;
+
+  // Creamos el panel de jugadores
+  crearPanelDeJugadores ( NUM_JUGADORES );
+
+  // Se finaliza generando la primera pregunta
+  generarPregunta();
+
+  // Se cierra el actual cuadro de diálogo
+  dialogNumJugadores.close();
+}
+
+
+
 // Gestión de eventos de botones
 document.getElementById("botonRespuesta").addEventListener("click", comprobarRespuesta);
 document.getElementById("botonPregunta").addEventListener("click", generarPregunta);
 btnContinuar.addEventListener('click', () => {
   dialogAvisos.close();
 });
+btnConfirmar.addEventListener('click', () => {
+  crearPartida();
+});
 
 
 
 // Se inicializa la app con una primera pregunta
-generarPregunta();
+dialogNumJugadores.showModal();

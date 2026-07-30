@@ -5,17 +5,14 @@ Juego familiar, inspirado en el popular concurso de televisión "El Precio Justo
 Por tanto, cada jugador debe estimar la longitud entre dos puntos geográficos, en línea recta, sobre la superficie terrestre. Es decir, hay que calcular mentalmente la distancia más corta que volaría un dron desde el centro de una ciudad hasta el centro de la otra.
 
 
-## 📈 Versión 1.0.2
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
-![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)
+## 📈 Versión 1.1.0
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000) ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff) ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)
 
 Esta es una versión estable del proyecto, desarrollada únicamente con tecnologías Front-End nativas: JavaScript, HTML y CSS. Se utiliza la librería de estilos Bootstrap de manera local.
 
 Se ha testado con éxito en diferentes tamaños de pantalla y la aplicación no necesita procesos de compilación, ni instalación de dependencias, ni conexión a Internet.
 
-En esta versión sólo aparecen ciudades españolas, en total 20, que suponen 190 combinaciones posibles, es decir, 190 preguntas diferentes. Y el número de jugadores está fijado a 3 por ahora.
+En esta versión sólo aparecen ciudades españolas, en total 20, que suponen 190 preguntas diferentes. El número de jugadores se elige al inicio, pudiendo participar entre 2 y 16 personas.
 
 
 ## 🎮 Jugar *online*
@@ -24,6 +21,7 @@ En esta versión sólo aparecen ciudades españolas, en total 20, que suponen 19
 Gracias al despliegue en GitHub Pages, se puede jugar aquí:
 
 👉 https://almagarinos.github.io/el-trecho-justo/ 👈
+
 
 ## 💻 Instalación local
 
@@ -67,42 +65,54 @@ el-trecho-justo/
 
 ## 🕹️ Dinámica del juego
 
-El flujo de la aplicación se repite cíclicamente y consiste en el siguiente:
+El flujo de la aplicación se repite cíclicamente tras crear los puestos de jugador y consiste en el siguiente:
 
 ```bash
-┌───────────────────────┐
-│   Selección de dos    │
-│  ciudades aleatorias  │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│  Se muestra pregunta  │   # Visible en la interfaz
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│ Fórmula de Haversine  │
-│ calcula la distancia  │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│ Cada jugador responde │   # Visible en la interfaz
-│  su estimación en km  │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│ Se hace validación de │   # Visible en la interfaz
-│ todas las respuestas  │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│ Se comparan márgenes  │   # Visible en la interfaz
-│ y se anuncia ganador  │
-└───────────────────────┘
+    ┌───────────────────────┐
+    │   Indicación del nº   │   # Visible en la interfaz
+    │  número de jugadores  │
+    └───────────┬───────────┘
+                │
+                ▼
+    ┌───────────────────────┐
+    │  Creación de puestos  │
+    │  de jugador e inputs  │
+    └───────────┬───────────┘
+                │
+                ▼
+    ┌───────────────────────┐
+┌───┤   Selección de dos    │
+│   │  ciudades aleatorias  │
+▲   └───────────┬───────────┘
+│               │
+│               ▼
+│   ┌───────────────────────┐
+│   │  Se muestra pregunta  │   # Visible en la interfaz
+│   └───────────┬───────────┘
+▲               │
+│               ▼
+│   ┌───────────────────────┐
+│   │ Fórmula de Haversine  │
+│   │ calcula la distancia  │
+│   └───────────┬───────────┘
+▲               │
+│               ▼
+│   ┌───────────────────────┐
+│   │ Cada jugador responde │   # Visible en la interfaz
+│   │  su estimación en km  │
+│   └───────────┬───────────┘
+▲               │
+│               ▼
+│   ┌───────────────────────┐
+│   │ Se hace validación de │   # Visible en la interfaz
+│   │ todas las respuestas  │
+│   └───────────┬───────────┘
+▲               │
+│               ▼
+│   ┌───────────────────────┐
+└───┤ Se comparan márgenes  │   # Visible en la interfaz
+    │ y se anuncia ganador  │
+    └───────────────────────┘
 ```
 
 ### Cálculo de la distancia exacta 📐
@@ -199,7 +209,8 @@ En el archivo `el-trecho-justo/assets/js/app.js` se puede hacer el filtrado de l
 ```javascript
 const seleccionCiudades = [];
 for (let i = 0; i < ciudades.length; i++) {
-  if (ciudades[i].pais == "España") { // Aquí seleccionamos sólo las españolas
+  // Aquí seleccionamos sólo las españolas
+  if (ciudades[i].pais == "España") {
     seleccionCiudades.push(ciudades[i]);
   }
 }

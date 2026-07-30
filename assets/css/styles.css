@@ -31,7 +31,7 @@ body {
   margin-bottom: 20px;
 }
 
-.inputJugador {
+.inputJugador, #inputNumJugadores {
   width: 100%;
   padding: 12px;
   border: 2px solid #ddd;
@@ -39,19 +39,19 @@ body {
   font-weight: bolder;
 }
 
-.inputJugador::placeholder {
+.inputJugador::placeholder, #inputNumJugadores::placeholder {
   font-weight: initial;
 }
 
-.inputJugador:hover {
+.inputJugador:hover, .#inputNumJugadores:hover {
   border-color: #4a4e69;
 }
 
-.inputJugador:focus {
+.inputJugador:focus, .#inputNumJugadores:focus {
   border-color: #4a5585;
 }
 
-.inputJugador:disabled {
+.inputJugador:disabled, .#inputNumJugadores:disabled {
   background-color: #eee;
   color: #4a4e69;
   pointer-events: none;
@@ -93,7 +93,7 @@ body {
   display: none;
 }
 
-#dialogoAvisos {
+.cuadroDialogo {
   border-width: 2px;
   border-radius: 8px;
   background-color: #fdf5e6;
@@ -101,11 +101,20 @@ body {
   max-height: calc(100% - 80px);
 }
 
-#dialogoAvisos::backdrop {
+.cuadroDialogo#dialogoNumJugadores {
+  max-width: calc(100% - 40px);
+  max-height: calc(100% - 40px);
+}
+
+.cuadroDialogo::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#botonContinuar {
+.cuadroDialogo#dialogoNumJugadores::backdrop {
+  background-color: #2a2f4d;
+}
+
+.cuadroDialogo .boton {
   padding: 10px 24px;
 }
 

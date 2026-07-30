@@ -11,7 +11,7 @@
 
         <!-- Estilos -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/styles.css?v=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css?v=1.1">
         
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
@@ -33,23 +33,7 @@
                  y <span id="ciudadB" class="ciudad"></span>?
             </h3>
 
-            <!-- Estamos suponiendo que hay 3 jugadores, pero ese número deberá ser dinámico -->
-            <div class="jugadores">
-                <div class="jugador">
-                    <h5>Jugador 1:</h5>
-                    <input type="number" class="inputJugador" placeholder="Cifra en km" min="1" max="20037">
-                </div>
-
-                <div class="jugador">
-                    <h5>Jugador 2:</h5>
-                    <input type="number" class="inputJugador" placeholder="Cifra en km" min="1" max="20037">
-                </div>
-
-                <div class="jugador">
-                    <h5>Jugador 3:</h5>
-                    <input type="number" class="inputJugador" placeholder="Cifra en km" min="1" max="20037">
-                </div>
-            </div>
+            <div class="jugadores" id="panelJugadores"></div>
 
             <div class="paneles">                
                 <div id="cuadroResultado" class="deshabilitado"></div>                
@@ -65,14 +49,21 @@
 
         </div>
 
-        <dialog id="dialogoAvisos">
+        <dialog id="dialogoAvisos" class="cuadroDialogo">
             <h3>Atención:</h3>
             <p id="textoAviso"></p>
             <button class="boton" id="botonContinuar">CONTINUAR</button>
         </dialog>
 
+        <dialog id="dialogoNumJugadores" class="cuadroDialogo">
+            <h3 class="text-repartido text-center mb-3">🌎 El Trecho Justo 🌍</h3>
+            <h5 class="text-repartido mb-3">Indique el número de jugadores:</h5>
+            <input type="number" id="inputNumJugadores" class="mb-3" placeholder="Inserte un número del 2 al 16" min="2" max="16">
+            <button class="boton" id="botonConfirmar">CONFIRMAR</button>
+        </dialog>
+
         <script src="assets/js/datos-ciudades.js"></script>
-        <script src="assets/js/app.js?v=1.0"></script>
+        <script src="assets/js/app.js?v=1.1"></script>
 
     </body>
 
