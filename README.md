@@ -5,7 +5,7 @@ Juego familiar, inspirado en el popular concurso de televisión "El Precio Justo
 Por tanto, cada jugador debe estimar la longitud entre dos puntos geográficos, en línea recta, sobre la superficie terrestre. Es decir, hay que calcular mentalmente la distancia más corta que volaría un dron desde el centro de una ciudad hasta el centro de la otra.
 
 
-## 📈 Versión 1.1.3
+## 📈 Versión 1.1.4
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000) ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff) ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)
 
 Esta es una versión estable del proyecto, desarrollada únicamente con tecnologías Front-End nativas: JavaScript, HTML y CSS. Se utiliza la librería de estilos Bootstrap de manera local.
@@ -54,6 +54,9 @@ el-trecho-justo/
 │   │
 │   ├── icon/
 │   │   └── ...                 # Archivos de favicon, generados en https://favicon.io/
+│   │
+│   ├── img/
+│   │   └── ...                 # Imágenes de banderas nacionales en formato WEBP
 │   │
 │   └── js/
 │       ├── app.js              # Lógica principal del juego, incluye comentarios
@@ -139,6 +142,7 @@ const ciudades = [
     nombre: "Madrid",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: true,
     coordenada: {
       latitud: 40.41673,
@@ -149,6 +153,7 @@ const ciudades = [
     nombre: "Valladolid",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 41.65436,
@@ -160,6 +165,7 @@ const ciudades = [
     nombre: "París",
     pais: "Francia",
     continente: "Europa",
+    banderaDePais: "FRA",
     esCapitalDePais: true,
     coordenada: {
       latitud: 48.85755,
@@ -171,6 +177,7 @@ const ciudades = [
     nombre: "Lima",
     pais: "Perú",
     continente: "América",
+    banderaDePais: "PER",
     esCapitalDePais: true,
     coordenada: {
       latitud: -12.04669,
@@ -181,10 +188,11 @@ const ciudades = [
 ];
 ```
 
-Hay 5 datos en cada ciudad:
+Hay 6 datos en cada ciudad:
 * Su nombre
 * País al que pertenece
 * Continente donde se encuentra
+* Nombre de la imagen de la bandera del país
 * Si es capital de su país o no (booleano)
 * Coordenadas en grados decimales
 

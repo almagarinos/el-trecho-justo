@@ -3,6 +3,7 @@ const ciudades = [
     nombre: "Madrid",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: true,
     coordenada: {
       latitud: 40.41673,
@@ -13,6 +14,7 @@ const ciudades = [
     nombre: "Valladolid",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 41.65436,
@@ -23,6 +25,7 @@ const ciudades = [
     nombre: "Sevilla",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 37.38909,
@@ -33,6 +36,7 @@ const ciudades = [
     nombre: "Barcelona",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 41.38744,
@@ -43,6 +47,7 @@ const ciudades = [
     nombre: "Málaga",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 36.71782,
@@ -53,6 +58,7 @@ const ciudades = [
     nombre: "Bilbao",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 43.26338,
@@ -63,6 +69,7 @@ const ciudades = [
     nombre: "Zaragoza",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 41.64743,
@@ -73,6 +80,7 @@ const ciudades = [
     nombre: "Murcia",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 37.9893,
@@ -83,6 +91,7 @@ const ciudades = [
     nombre: "Palma de Mallorca",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 39.57265,
@@ -93,6 +102,7 @@ const ciudades = [
     nombre: "Ibiza",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 38.90661,
@@ -103,6 +113,7 @@ const ciudades = [
     nombre: "Las Palmas de Gran Canaria",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 28.12355,
@@ -113,6 +124,7 @@ const ciudades = [
     nombre: "Santa Cruz de Tenerife",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 28.46363,
@@ -123,6 +135,7 @@ const ciudades = [
     nombre: "Alicante",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 38.34577,
@@ -133,6 +146,7 @@ const ciudades = [
     nombre: "Vigo",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 42.2406,
@@ -143,6 +157,7 @@ const ciudades = [
     nombre: "Gijón",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 43.53225,
@@ -153,6 +168,7 @@ const ciudades = [
     nombre: "Oviedo",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 43.36225,
@@ -163,6 +179,7 @@ const ciudades = [
     nombre: "Santander",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 43.46363,
@@ -173,6 +190,7 @@ const ciudades = [
     nombre: "Salamanca",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 40.9701,
@@ -183,6 +201,7 @@ const ciudades = [
     nombre: "Toledo",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 39.8581,
@@ -193,6 +212,7 @@ const ciudades = [
     nombre: "Santiago de Compostela",
     pais: "España",
     continente: "Europa",
+    banderaDePais: "ESP",
     esCapitalDePais: false,
     coordenada: {
       latitud: 42.87686,
@@ -203,6 +223,7 @@ const ciudades = [
     nombre: "Roma",
     pais: "Italia",
     continente: "Europa",
+    banderaDePais: "ITA",
     esCapitalDePais: true,
     coordenada: {
       latitud: 41.89671,
@@ -213,6 +234,7 @@ const ciudades = [
     nombre: "Milán",
     pais: "Italia",
     continente: "Europa",
+    banderaDePais: "ITA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 45.4685,
@@ -223,6 +245,7 @@ const ciudades = [
     nombre: "Nápoles",
     pais: "Italia",
     continente: "Europa",
+    banderaDePais: "ITA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 40.85177,
@@ -233,6 +256,7 @@ const ciudades = [
     nombre: "Turín",
     pais: "Italia",
     continente: "Europa",
+    banderaDePais: "ITA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 45.07049,
@@ -243,6 +267,7 @@ const ciudades = [
     nombre: "Palermo",
     pais: "Italia",
     continente: "Europa",
+    banderaDePais: "ITA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 38.11569,
@@ -253,6 +278,7 @@ const ciudades = [
     nombre: "Berlín",
     pais: "Alemania",
     continente: "Europa",
+    banderaDePais: "DEU",
     esCapitalDePais: true,
     coordenada: {
       latitud: 52.52001,
@@ -263,6 +289,7 @@ const ciudades = [
     nombre: "Hamburgo",
     pais: "Alemania",
     continente: "Europa",
+    banderaDePais: "DEU",
     esCapitalDePais: false,
     coordenada: {
       latitud: 53.54883,
@@ -273,6 +300,7 @@ const ciudades = [
     nombre: "Múnich",
     pais: "Alemania",
     continente: "Europa",
+    banderaDePais: "DEU",
     esCapitalDePais: false,
     coordenada: {
       latitud: 48.13513,
@@ -283,6 +311,7 @@ const ciudades = [
     nombre: "Colonia",
     pais: "Alemania",
     continente: "Europa",
+    banderaDePais: "DEU",
     esCapitalDePais: false,
     coordenada: {
       latitud: 50.93753,
@@ -293,6 +322,7 @@ const ciudades = [
     nombre: "París",
     pais: "Francia",
     continente: "Europa",
+    banderaDePais: "FRA",
     esCapitalDePais: true,
     coordenada: {
       latitud: 48.85755,
@@ -303,6 +333,7 @@ const ciudades = [
     nombre: "Marsella",
     pais: "Francia",
     continente: "Europa",
+    banderaDePais: "FRA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 43.30257,
@@ -313,6 +344,7 @@ const ciudades = [
     nombre: "Lyon",
     pais: "Francia",
     continente: "Europa",
+    banderaDePais: "FRA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 45.76404,
@@ -323,6 +355,7 @@ const ciudades = [
     nombre: "Londres",
     pais: "Reino Unido",
     continente: "Europa",
+    banderaDePais: "GBR",
     esCapitalDePais: true,
     coordenada: {
       latitud: 51.50722,
@@ -333,6 +366,7 @@ const ciudades = [
     nombre: "Mánchester",
     pais: "Reino Unido",
     continente: "Europa",
+    banderaDePais: "GBR",
     esCapitalDePais: false,
     coordenada: {
       latitud: 53.48076,
@@ -343,6 +377,7 @@ const ciudades = [
     nombre: "Liverpool",
     pais: "Reino Unido",
     continente: "Europa",
+    banderaDePais: "GBR",
     esCapitalDePais: false,
     coordenada: {
       latitud: 53.40837,
@@ -353,6 +388,7 @@ const ciudades = [
     nombre: "Lisboa",
     pais: "Portugal",
     continente: "Europa",
+    banderaDePais: "PRT",
     esCapitalDePais: true,
     coordenada: {
       latitud: 38.72225,
@@ -363,6 +399,7 @@ const ciudades = [
     nombre: "Oporto",
     pais: "Portugal",
     continente: "Europa",
+    banderaDePais: "PRT",
     esCapitalDePais: false,
     coordenada: {
       latitud: 41.15794,
@@ -373,6 +410,7 @@ const ciudades = [
     nombre: "Ámsterdam",
     pais: "Países Bajos",
     continente: "Europa",
+    banderaDePais: "NLD",
     esCapitalDePais: true,
     coordenada: {
       latitud: 52.36757,
@@ -383,6 +421,7 @@ const ciudades = [
     nombre: "Róterdam",
     pais: "Países Bajos",
     continente: "Europa",
+    banderaDePais: "NLD",
     esCapitalDePais: false,
     coordenada: {
       latitud: 51.92442,
@@ -393,6 +432,7 @@ const ciudades = [
     nombre: "Bruselas",
     pais: "Bélgica",
     continente: "Europa",
+    banderaDePais: "BEL",
     esCapitalDePais: true,
     coordenada: {
       latitud: 50.8477,
@@ -403,6 +443,7 @@ const ciudades = [
     nombre: "Amberes",
     pais: "Bélgica",
     continente: "Europa",
+    banderaDePais: "BEL",
     esCapitalDePais: false,
     coordenada: {
       latitud: 51.21993,
@@ -413,6 +454,7 @@ const ciudades = [
     nombre: "Varsovia",
     pais: "Polonia",
     continente: "Europa",
+    banderaDePais: "POL",
     esCapitalDePais: true,
     coordenada: {
       latitud: 52.22968,
@@ -423,6 +465,7 @@ const ciudades = [
     nombre: "Cracovia",
     pais: "Polonia",
     continente: "Europa",
+    banderaDePais: "POL",
     esCapitalDePais: false,
     coordenada: {
       latitud: 50.06465,
@@ -433,6 +476,7 @@ const ciudades = [
     nombre: "Zúrich",
     pais: "Suiza",
     continente: "Europa",
+    banderaDePais: "CHE",
     esCapitalDePais: false,
     coordenada: {
       latitud: 47.37689,
@@ -443,6 +487,7 @@ const ciudades = [
     nombre: "Ginebra",
     pais: "Suiza",
     continente: "Europa",
+    banderaDePais: "CHE",
     esCapitalDePais: false,
     coordenada: {
       latitud: 46.20439,
@@ -453,6 +498,7 @@ const ciudades = [
     nombre: "Viena",
     pais: "Austria",
     continente: "Europa",
+    banderaDePais: "AUT",
     esCapitalDePais: true,
     coordenada: {
       latitud: 48.20807,
@@ -463,6 +509,7 @@ const ciudades = [
     nombre: "Praga",
     pais: "República Checa",
     continente: "Europa",
+    banderaDePais: "CZE",
     esCapitalDePais: true,
     coordenada: {
       latitud: 50.07554,
@@ -473,6 +520,7 @@ const ciudades = [
     nombre: "Atenas",
     pais: "Grecia",
     continente: "Europa",
+    banderaDePais: "GRC",
     esCapitalDePais: true,
     coordenada: {
       latitud: 37.98381,
@@ -483,6 +531,7 @@ const ciudades = [
     nombre: "Dublín",
     pais: "Irlanda",
     continente: "Europa",
+    banderaDePais: "IRL",
     esCapitalDePais: true,
     coordenada: {
       latitud: 53.34981,
@@ -493,6 +542,7 @@ const ciudades = [
     nombre: "Kiev",
     pais: "Ucrania",
     continente: "Europa",
+    banderaDePais: "UKR",
     esCapitalDePais: true,
     coordenada: {
       latitud: 50.45036,
@@ -503,6 +553,7 @@ const ciudades = [
     nombre: "Copenhague",
     pais: "Dinamarca",
     continente: "Europa",
+    banderaDePais: "DNK",
     esCapitalDePais: true,
     coordenada: {
       latitud: 55.6761,
@@ -513,6 +564,7 @@ const ciudades = [
     nombre: "Estocolmo",
     pais: "Suecia",
     continente: "Europa",
+    banderaDePais: "SWE",
     esCapitalDePais: true,
     coordenada: {
       latitud: 59.3327,
@@ -523,6 +575,7 @@ const ciudades = [
     nombre: "Oslo",
     pais: "Noruega",
     continente: "Europa",
+    banderaDePais: "NOR",
     esCapitalDePais: true,
     coordenada: {
       latitud: 59.91217,
@@ -533,6 +586,7 @@ const ciudades = [
     nombre: "Helsinki",
     pais: "Finlandia",
     continente: "Europa",
+    banderaDePais: "FIN",
     esCapitalDePais: true,
     coordenada: {
       latitud: 60.16986,
@@ -543,6 +597,7 @@ const ciudades = [
     nombre: "Budapest",
     pais: "Hungría",
     continente: "Europa",
+    banderaDePais: "HUN",
     esCapitalDePais: true,
     coordenada: {
       latitud: 47.49791,
@@ -553,6 +608,7 @@ const ciudades = [
     nombre: "Bucarest",
     pais: "Rumanía",
     continente: "Europa",
+    banderaDePais: "ROU",
     esCapitalDePais: true,
     coordenada: {
       latitud: 44.42677,
@@ -563,6 +619,7 @@ const ciudades = [
     nombre: "Sofía",
     pais: "Bulgaria",
     continente: "Europa",
+    banderaDePais: "BGR",
     esCapitalDePais: true,
     coordenada: {
       latitud: 42.69771,
@@ -573,6 +630,7 @@ const ciudades = [
     nombre: "Belgrado",
     pais: "Serbia",
     continente: "Europa",
+    banderaDePais: "SRB",
     esCapitalDePais: true,
     coordenada: {
       latitud: 44.81254,
@@ -583,6 +641,7 @@ const ciudades = [
     nombre: "Reikiavik",
     pais: "Islandia",
     continente: "Europa",
+    banderaDePais: "ISL",
     esCapitalDePais: true,
     coordenada: {
       latitud: 64.14699,
@@ -593,6 +652,7 @@ const ciudades = [
     nombre: "Riga",
     pais: "Letonia",
     continente: "Europa",
+    banderaDePais: "LVA",
     esCapitalDePais: true,
     coordenada: {
       latitud: 56.96769,
@@ -603,6 +663,7 @@ const ciudades = [
     nombre: "Washington D. C.",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: true,
     coordenada: {
       latitud: 38.90729,
@@ -613,6 +674,7 @@ const ciudades = [
     nombre: "Nueva York",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 40.71278,
@@ -623,6 +685,7 @@ const ciudades = [
     nombre: "Miami",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 25.76168,
@@ -633,6 +696,7 @@ const ciudades = [
     nombre: "Los Ángeles",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 34.05491,
@@ -643,6 +707,7 @@ const ciudades = [
     nombre: "Las Vegas",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 36.17156,
@@ -653,6 +718,7 @@ const ciudades = [
     nombre: "Chicago",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 41.88325,
@@ -663,6 +729,7 @@ const ciudades = [
     nombre: "Houston",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 29.76008,
@@ -673,6 +740,7 @@ const ciudades = [
     nombre: "Dallas",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 32.77666,
@@ -683,6 +751,7 @@ const ciudades = [
     nombre: "San Antonio",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 29.42519,
@@ -693,6 +762,7 @@ const ciudades = [
     nombre: "San Francisco",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 37.77493,
@@ -703,6 +773,7 @@ const ciudades = [
     nombre: "Seattle",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 47.60614,
@@ -713,6 +784,7 @@ const ciudades = [
     nombre: "Boston",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 42.35551,
@@ -723,6 +795,7 @@ const ciudades = [
     nombre: "Filadelfia",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 39.95258,
@@ -733,6 +806,7 @@ const ciudades = [
     nombre: "San Diego",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 32.71574,
@@ -743,6 +817,7 @@ const ciudades = [
     nombre: "Aspen",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 39.1911,
@@ -753,6 +828,7 @@ const ciudades = [
     nombre: "Denver",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 39.73924,
@@ -763,6 +839,7 @@ const ciudades = [
     nombre: "Nueva Orleans",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 29.95089,
@@ -773,6 +850,7 @@ const ciudades = [
     nombre: "Atlanta",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 33.75013,
@@ -783,6 +861,7 @@ const ciudades = [
     nombre: "Detroit",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 42.32972,
@@ -793,6 +872,7 @@ const ciudades = [
     nombre: "Nashville",
     pais: "Estados Unidos",
     continente: "América",
+    banderaDePais: "USA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 36.16266,
@@ -803,6 +883,7 @@ const ciudades = [
     nombre: "Ciudad de México",
     pais: "México",
     continente: "América",
+    banderaDePais: "MEX",
     esCapitalDePais: true,
     coordenada: {
       latitud: 19.43261,
@@ -813,6 +894,7 @@ const ciudades = [
     nombre: "Tijuana",
     pais: "México",
     continente: "América",
+    banderaDePais: "MEX",
     esCapitalDePais: false,
     coordenada: {
       latitud: 32.5332,
@@ -823,6 +905,7 @@ const ciudades = [
     nombre: "Monterrey",
     pais: "México",
     continente: "América",
+    banderaDePais: "MEX",
     esCapitalDePais: false,
     coordenada: {
       latitud: 25.68661,
@@ -833,6 +916,7 @@ const ciudades = [
     nombre: "Cancún",
     pais: "México",
     continente: "América",
+    banderaDePais: "MEX",
     esCapitalDePais: false,
     coordenada: {
       latitud: 21.16191,
@@ -843,6 +927,7 @@ const ciudades = [
     nombre: "Veracruz",
     pais: "México",
     continente: "América",
+    banderaDePais: "MEX",
     esCapitalDePais: false,
     coordenada: {
       latitud: 19.17377,
@@ -853,6 +938,7 @@ const ciudades = [
     nombre: "Acapulco",
     pais: "México",
     continente: "América",
+    banderaDePais: "MEX",
     esCapitalDePais: false,
     coordenada: {
       latitud: 16.86395,
@@ -863,6 +949,7 @@ const ciudades = [
     nombre: "Bogotá",
     pais: "Colombia",
     continente: "América",
+    banderaDePais: "COL",
     esCapitalDePais: true,
     coordenada: {
       latitud: 4.71099,
@@ -873,6 +960,7 @@ const ciudades = [
     nombre: "Medellín",
     pais: "Colombia",
     continente: "América",
+    banderaDePais: "COL",
     esCapitalDePais: false,
     coordenada: {
       latitud: 6.24764,
@@ -883,6 +971,7 @@ const ciudades = [
     nombre: "Cali",
     pais: "Colombia",
     continente: "América",
+    banderaDePais: "COL",
     esCapitalDePais: false,
     coordenada: {
       latitud: 3.45165,
@@ -893,6 +982,7 @@ const ciudades = [
     nombre: "Cartagena de Indias",
     pais: "Colombia",
     continente: "América",
+    banderaDePais: "COL",
     esCapitalDePais: false,
     coordenada: {
       latitud: 10.39323,
@@ -903,6 +993,7 @@ const ciudades = [
     nombre: "Otawa",
     pais: "Canadá",
     continente: "América",
+    banderaDePais: "CAN",
     esCapitalDePais: true,
     coordenada: {
       latitud: 45.42006,
@@ -913,6 +1004,7 @@ const ciudades = [
     nombre: "Toronto",
     pais: "Canadá",
     continente: "América",
+    banderaDePais: "CAN",
     esCapitalDePais: false,
     coordenada: {
       latitud: 43.65483,
@@ -923,6 +1015,7 @@ const ciudades = [
     nombre: "Vancouver",
     pais: "Canadá",
     continente: "América",
+    banderaDePais: "CAN",
     esCapitalDePais: false,
     coordenada: {
       latitud: 49.28273,
@@ -933,6 +1026,7 @@ const ciudades = [
     nombre: "Montreal",
     pais: "Canadá",
     continente: "América",
+    banderaDePais: "CAN",
     esCapitalDePais: false,
     coordenada: {
       latitud: 45.50189,
@@ -943,6 +1037,7 @@ const ciudades = [
     nombre: "Brasilia",
     pais: "Brasil",
     continente: "América",
+    banderaDePais: "BRA",
     esCapitalDePais: true,
     coordenada: {
       latitud: -15.79752,
@@ -953,6 +1048,7 @@ const ciudades = [
     nombre: "Río de Janeiro",
     pais: "Brasil",
     continente: "América",
+    banderaDePais: "BRA",
     esCapitalDePais: false,
     coordenada: {
       latitud: -22.90685,
@@ -963,6 +1059,7 @@ const ciudades = [
     nombre: "São Paulo",
     pais: "Brasil",
     continente: "América",
+    banderaDePais: "BRA",
     esCapitalDePais: false,
     coordenada: {
       latitud: -23.55577,
@@ -973,6 +1070,7 @@ const ciudades = [
     nombre: "Buenos Aires",
     pais: "Argentina",
     continente: "América",
+    banderaDePais: "ARG",
     esCapitalDePais: true,
     coordenada: {
       latitud: -34.60367,
@@ -983,6 +1081,7 @@ const ciudades = [
     nombre: "Rosario",
     pais: "Argentina",
     continente: "América",
+    banderaDePais: "ARG",
     esCapitalDePais: false,
     coordenada: {
       latitud: -32.9587,
@@ -993,6 +1092,7 @@ const ciudades = [
     nombre: "Mendoza",
     pais: "Argentina",
     continente: "América",
+    banderaDePais: "ARG",
     esCapitalDePais: false,
     coordenada: {
       latitud: -32.88946,
@@ -1003,6 +1103,7 @@ const ciudades = [
     nombre: "La Habana",
     pais: "Cuba",
     continente: "América",
+    banderaDePais: "CUB",
     esCapitalDePais: true,
     coordenada: {
       latitud: 23.13387,
@@ -1013,6 +1114,7 @@ const ciudades = [
     nombre: "Santiago de Cuba",
     pais: "Cuba",
     continente: "América",
+    banderaDePais: "CUB",
     esCapitalDePais: false,
     coordenada: {
       latitud: 20.01693,
@@ -1023,6 +1125,7 @@ const ciudades = [
     nombre: "Santo Domingo",
     pais: "República Dominicana",
     continente: "América",
+    banderaDePais: "DOM",
     esCapitalDePais: true,
     coordenada: {
       latitud: 18.46262,
@@ -1033,6 +1136,7 @@ const ciudades = [
     nombre: "Punta Cana",
     pais: "República Dominicana",
     continente: "América",
+    banderaDePais: "DOM",
     esCapitalDePais: false,
     coordenada: {
       latitud: 18.56008,
@@ -1043,6 +1147,7 @@ const ciudades = [
     nombre: "Lima",
     pais: "Perú",
     continente: "América",
+    banderaDePais: "PER",
     esCapitalDePais: true,
     coordenada: {
       latitud: -12.04669,
@@ -1053,6 +1158,7 @@ const ciudades = [
     nombre: "Cusco",
     pais: "Perú",
     continente: "América",
+    banderaDePais: "PER",
     esCapitalDePais: false,
     coordenada: {
       latitud: -13.53195,
@@ -1063,6 +1169,7 @@ const ciudades = [
     nombre: "Santa Cruz de la Sierra",
     pais: "Bolivia",
     continente: "América",
+    banderaDePais: "BOL",
     esCapitalDePais: false,
     coordenada: {
       latitud: -17.79807,
@@ -1073,6 +1180,7 @@ const ciudades = [
     nombre: "Cochabamba",
     pais: "Bolivia",
     continente: "América",
+    banderaDePais: "BOL",
     esCapitalDePais: false,
     coordenada: {
       latitud: -17.38201,
@@ -1083,6 +1191,7 @@ const ciudades = [
     nombre: "Montevideo",
     pais: "Uruguay",
     continente: "América",
+    banderaDePais: "URY",
     esCapitalDePais: true,
     coordenada: {
       latitud: -34.9055,
@@ -1093,6 +1202,7 @@ const ciudades = [
     nombre: "Punta del Este",
     pais: "Uruguay",
     continente: "América",
+    banderaDePais: "URY",
     esCapitalDePais: false,
     coordenada: {
       latitud: -34.93606,
@@ -1103,6 +1213,7 @@ const ciudades = [
     nombre: "Santiago de Chile",
     pais: "Chile",
     continente: "América",
+    banderaDePais: "CHL",
     esCapitalDePais: true,
     coordenada: {
       latitud: -33.44889,
@@ -1113,6 +1224,7 @@ const ciudades = [
     nombre: "Valparaíso",
     pais: "Chile",
     continente: "América",
+    banderaDePais: "CHL",
     esCapitalDePais: false,
     coordenada: {
       latitud: -33.04731,
@@ -1123,6 +1235,7 @@ const ciudades = [
     nombre: "Caracas",
     pais: "Venezuela",
     continente: "América",
+    banderaDePais: "VEN",
     esCapitalDePais: true,
     coordenada: {
       latitud: 10.5017,
@@ -1133,6 +1246,7 @@ const ciudades = [
     nombre: "Maracaibo",
     pais: "Venezuela",
     continente: "América",
+    banderaDePais: "VEN",
     esCapitalDePais: false,
     coordenada: {
       latitud: 10.64101,
@@ -1143,6 +1257,7 @@ const ciudades = [
     nombre: "Ciudad de Panamá",
     pais: "Panamá",
     continente: "América",
+    banderaDePais: "PAN",
     esCapitalDePais: true,
     coordenada: {
       latitud: 8.98238,
@@ -1153,6 +1268,7 @@ const ciudades = [
     nombre: "Managua",
     pais: "Nicaragua",
     continente: "América",
+    banderaDePais: "NIC",
     esCapitalDePais: true,
     coordenada: {
       latitud: 12.11499,
@@ -1163,6 +1279,7 @@ const ciudades = [
     nombre: "Tegucigalpa",
     pais: "Honduras",
     continente: "América",
+    banderaDePais: "HND",
     esCapitalDePais: true,
     coordenada: {
       latitud: 14.06071,
@@ -1173,6 +1290,7 @@ const ciudades = [
     nombre: "San Salvador",
     pais: "El Salvador",
     continente: "América",
+    banderaDePais: "SLV",
     esCapitalDePais: true,
     coordenada: {
       latitud: 13.69806,
@@ -1183,6 +1301,7 @@ const ciudades = [
     nombre: "Ciudad de Guatemala",
     pais: "Guatemala",
     continente: "América",
+    banderaDePais: "GTM",
     esCapitalDePais: true,
     coordenada: {
       latitud: 14.63491,
@@ -1193,6 +1312,7 @@ const ciudades = [
     nombre: "Quito",
     pais: "Ecuador",
     continente: "América",
+    banderaDePais: "ECU",
     esCapitalDePais: true,
     coordenada: {
       latitud: -0.22325,
@@ -1203,6 +1323,7 @@ const ciudades = [
     nombre: "Pekín",
     pais: "China",
     continente: "Asia",
+    banderaDePais: "CHN",
     esCapitalDePais: true,
     coordenada: {
       latitud: 39.90421,
@@ -1213,6 +1334,7 @@ const ciudades = [
     nombre: "Shanghái",
     pais: "China",
     continente: "Asia",
+    banderaDePais: "CHN",
     esCapitalDePais: false,
     coordenada: {
       latitud: 31.23042,
@@ -1223,6 +1345,7 @@ const ciudades = [
     nombre: "Hong Kong",
     pais: "China",
     continente: "Asia",
+    banderaDePais: "CHN",
     esCapitalDePais: false,
     coordenada: {
       latitud: 22.27832,
@@ -1233,6 +1356,7 @@ const ciudades = [
     nombre: "Nueva Deli",
     pais: "India",
     continente: "Asia",
+    banderaDePais: "IND",
     esCapitalDePais: true,
     coordenada: {
       latitud: 28.61393,
@@ -1243,6 +1367,7 @@ const ciudades = [
     nombre: "Bombay",
     pais: "India",
     continente: "Asia",
+    banderaDePais: "IND",
     esCapitalDePais: false,
     coordenada: {
       latitud: 18.95823,
@@ -1253,6 +1378,7 @@ const ciudades = [
     nombre: "Calcuta",
     pais: "India",
     continente: "Asia",
+    banderaDePais: "IND",
     esCapitalDePais: false,
     coordenada: {
       latitud: 22.57435,
@@ -1263,6 +1389,7 @@ const ciudades = [
     nombre: "Tokio",
     pais: "Japón",
     continente: "Asia",
+    banderaDePais: "JPN",
     esCapitalDePais: true,
     coordenada: {
       latitud: 35.6895,
@@ -1273,6 +1400,7 @@ const ciudades = [
     nombre: "Kioto",
     pais: "Japón",
     continente: "Asia",
+    banderaDePais: "JPN",
     esCapitalDePais: false,
     coordenada: {
       latitud: 35.01156,
@@ -1283,6 +1411,7 @@ const ciudades = [
     nombre: "Abu Dabi",
     pais: "Emiratos Árabes Unidos",
     continente: "Asia",
+    banderaDePais: "ARE",
     esCapitalDePais: true,
     coordenada: {
       latitud: 24.45388,
@@ -1293,6 +1422,7 @@ const ciudades = [
     nombre: "Dubái",
     pais: "Emiratos Árabes Unidos",
     continente: "Asia",
+    banderaDePais: "ARE",
     esCapitalDePais: false,
     coordenada: {
       latitud: 25.20485,
@@ -1303,6 +1433,7 @@ const ciudades = [
     nombre: "Kabul",
     pais: "Afganistán",
     continente: "Asia",
+    banderaDePais: "AFG",
     esCapitalDePais: true,
     coordenada: {
       latitud: 34.55535,
@@ -1313,6 +1444,7 @@ const ciudades = [
     nombre: "Seúl",
     pais: "Corea del Sur",
     continente: "Asia",
+    banderaDePais: "KOR",
     esCapitalDePais: true,
     coordenada: {
       latitud: 37.566,
@@ -1323,6 +1455,7 @@ const ciudades = [
     nombre: "Bangkok",
     pais: "Tailandia",
     continente: "Asia",
+    banderaDePais: "THA",
     esCapitalDePais: true,
     coordenada: {
       latitud: 13.75633,
@@ -1333,6 +1466,7 @@ const ciudades = [
     nombre: "Ciudad de Singapur",
     pais: "Singapur",
     continente: "Asia",
+    banderaDePais: "SGP",
     esCapitalDePais: true,
     coordenada: {
       latitud: 1.28967,
@@ -1343,6 +1477,7 @@ const ciudades = [
     nombre: "Manila",
     pais: "Filipinas",
     continente: "Asia",
+    banderaDePais: "PHL",
     esCapitalDePais: true,
     coordenada: {
       latitud: 14.59951,
@@ -1353,6 +1488,7 @@ const ciudades = [
     nombre: "Hanói",
     pais: "Vietnam",
     continente: "Asia",
+    banderaDePais: "VNM",
     esCapitalDePais: true,
     coordenada: {
       latitud: 21.02776,
@@ -1363,6 +1499,7 @@ const ciudades = [
     nombre: "Damasco",
     pais: "Siria",
     continente: "Asia",
+    banderaDePais: "SYR",
     esCapitalDePais: true,
     coordenada: {
       latitud: 33.51322,
@@ -1373,6 +1510,7 @@ const ciudades = [
     nombre: "Malé",
     pais: "Maldivas",
     continente: "Asia",
+    banderaDePais: "MDV",
     esCapitalDePais: true,
     coordenada: {
       latitud: 4.17521,
@@ -1383,6 +1521,7 @@ const ciudades = [
     nombre: "Ankara",
     pais: "Turquía",
     continente: "Asia",
+    banderaDePais: "TUR",
     esCapitalDePais: true,
     coordenada: {
       latitud: 39.93336,
@@ -1393,6 +1532,7 @@ const ciudades = [
     nombre: "Doha",
     pais: "Catar",
     continente: "Asia",
+    banderaDePais: "QAT",
     esCapitalDePais: true,
     coordenada: {
       latitud: 25.28545,
@@ -1403,6 +1543,7 @@ const ciudades = [
     nombre: "Manama",
     pais: "Baréin",
     continente: "Asia",
+    banderaDePais: "BHR",
     esCapitalDePais: true,
     coordenada: {
       latitud: 26.22353,
@@ -1413,6 +1554,7 @@ const ciudades = [
     nombre: "Ciudad de Kuwait",
     pais: "Kuwait",
     continente: "Asia",
+    banderaDePais: "KWT",
     esCapitalDePais: true,
     coordenada: {
       latitud: 29.37803,
@@ -1423,6 +1565,7 @@ const ciudades = [
     nombre: "Riad",
     pais: "Arabia Saudí",
     continente: "Asia",
+    banderaDePais: "SAU",
     esCapitalDePais: true,
     coordenada: {
       latitud: 24.71355,
@@ -1433,6 +1576,7 @@ const ciudades = [
     nombre: "Teherán",
     pais: "Irán",
     continente: "Asia",
+    banderaDePais: "IRN",
     esCapitalDePais: true,
     coordenada: {
       latitud: 35.72186,
@@ -1443,6 +1587,7 @@ const ciudades = [
     nombre: "Bagdad",
     pais: "Irak",
     continente: "Asia",
+    banderaDePais: "IRQ",
     esCapitalDePais: true,
     coordenada: {
       latitud: 33.31524,
@@ -1453,6 +1598,7 @@ const ciudades = [
     nombre: "Rabat",
     pais: "Marruecos",
     continente: "África",
+    banderaDePais: "MAR",
     esCapitalDePais: true,
     coordenada: {
       latitud: 34.00836,
@@ -1463,6 +1609,7 @@ const ciudades = [
     nombre: "Casablanca",
     pais: "Marruecos",
     continente: "África",
+    banderaDePais: "MAR",
     esCapitalDePais: false,
     coordenada: {
       latitud: 33.57311,
@@ -1473,6 +1620,7 @@ const ciudades = [
     nombre: "Fez",
     pais: "Marruecos",
     continente: "África",
+    banderaDePais: "MAR",
     esCapitalDePais: false,
     coordenada: {
       latitud: 34.01812,
@@ -1483,6 +1631,7 @@ const ciudades = [
     nombre: "Marrakech",
     pais: "Marruecos",
     continente: "África",
+    banderaDePais: "MAR",
     esCapitalDePais: false,
     coordenada: {
       latitud: 31.62252,
@@ -1493,6 +1642,7 @@ const ciudades = [
     nombre: "Tánger",
     pais: "Marruecos",
     continente: "África",
+    banderaDePais: "MAR",
     esCapitalDePais: false,
     coordenada: {
       latitud: 35.75947,
@@ -1503,6 +1653,7 @@ const ciudades = [
     nombre: "El Cairo",
     pais: "Egipto",
     continente: "África",
+    banderaDePais: "EGY",
     esCapitalDePais: true,
     coordenada: {
       latitud: 30.04442,
@@ -1513,6 +1664,7 @@ const ciudades = [
     nombre: "Alejandría",
     pais: "Egipto",
     continente: "África",
+    banderaDePais: "EGY",
     esCapitalDePais: false,
     coordenada: {
       latitud: 31.20009,
@@ -1523,6 +1675,7 @@ const ciudades = [
     nombre: "Luxor",
     pais: "Egipto",
     continente: "África",
+    banderaDePais: "EGY",
     esCapitalDePais: false,
     coordenada: {
       latitud: 25.68724,
@@ -1533,6 +1686,7 @@ const ciudades = [
     nombre: "Asuán",
     pais: "Egipto",
     continente: "África",
+    banderaDePais: "EGY",
     esCapitalDePais: false,
     coordenada: {
       latitud: 24.08894,
@@ -1543,6 +1697,7 @@ const ciudades = [
     nombre: "Johannesburgo",
     pais: "Sudáfrica",
     continente: "África",
+    banderaDePais: "ZAF",
     esCapitalDePais: false,
     coordenada: {
       latitud: -26.20565,
@@ -1553,6 +1708,7 @@ const ciudades = [
     nombre: "Praia",
     pais: "Cabo Verde",
     continente: "África",
+    banderaDePais: "CPV",
     esCapitalDePais: true,
     coordenada: {
       latitud: 14.91977,
@@ -1563,6 +1719,7 @@ const ciudades = [
     nombre: "Nairobi",
     pais: "Kenia",
     continente: "África",
+    banderaDePais: "KEN",
     esCapitalDePais: true,
     coordenada: {
       latitud: -1.29207,
@@ -1573,6 +1730,7 @@ const ciudades = [
     nombre: "Lagos",
     pais: "Nigeria",
     continente: "África",
+    banderaDePais: "NGA",
     esCapitalDePais: false,
     coordenada: {
       latitud: 6.61374,
@@ -1583,6 +1741,7 @@ const ciudades = [
     nombre: "Trípoli",
     pais: "Libia",
     continente: "África",
+    banderaDePais: "LBY",
     esCapitalDePais: true,
     coordenada: {
       latitud: 32.88771,
@@ -1593,6 +1752,7 @@ const ciudades = [
     nombre: "Dakar",
     pais: "Senegal",
     continente: "África",
+    banderaDePais: "SEN",
     esCapitalDePais: true,
     coordenada: {
       latitud: 14.71668,
@@ -1603,6 +1763,7 @@ const ciudades = [
     nombre: "Argel",
     pais: "Argelia",
     continente: "África",
+    banderaDePais: "DZA",
     esCapitalDePais: true,
     coordenada: {
       latitud: 36.77638,
@@ -1613,6 +1774,7 @@ const ciudades = [
     nombre: "Puerto Sudán",
     pais: "Sudán",
     continente: "África",
+    banderaDePais: "SDN",
     esCapitalDePais: false,
     coordenada: {
       latitud: 19.60197,
@@ -1623,6 +1785,7 @@ const ciudades = [
     nombre: "Luanda",
     pais: "Angola",
     continente: "África",
+    banderaDePais: "AGO",
     esCapitalDePais: true,
     coordenada: {
       latitud: -8.81466,
@@ -1633,6 +1796,7 @@ const ciudades = [
     nombre: "Maputo",
     pais: "Mozambique",
     continente: "África",
+    banderaDePais: "MOZ",
     esCapitalDePais: true,
     coordenada: {
       latitud: -25.96925,
@@ -1643,6 +1807,7 @@ const ciudades = [
     nombre: "Antananarivo",
     pais: "Madagascar",
     continente: "África",
+    banderaDePais: "MDG",
     esCapitalDePais: true,
     coordenada: {
       latitud: -18.91846,
@@ -1653,6 +1818,7 @@ const ciudades = [
     nombre: "Camberra",
     pais: "Australia",
     continente: "Oceanía",
+    banderaDePais: "AUS",
     esCapitalDePais: true,
     coordenada: {
       latitud: -35.28018,
@@ -1663,6 +1829,7 @@ const ciudades = [
     nombre: "Sídney",
     pais: "Australia",
     continente: "Oceanía",
+    banderaDePais: "AUS",
     esCapitalDePais: false,
     coordenada: {
       latitud: -33.86225,
@@ -1673,6 +1840,7 @@ const ciudades = [
     nombre: "Melbourne",
     pais: "Australia",
     continente: "Oceanía",
+    banderaDePais: "AUS",
     esCapitalDePais: false,
     coordenada: {
       latitud: -37.81363,
@@ -1683,6 +1851,7 @@ const ciudades = [
     nombre: "Adelaida",
     pais: "Australia",
     continente: "Oceanía",
+    banderaDePais: "AUS",
     esCapitalDePais: false,
     coordenada: {
       latitud: -34.9285,
@@ -1693,6 +1862,7 @@ const ciudades = [
     nombre: "Brisbane",
     pais: "Australia",
     continente: "Oceanía",
+    banderaDePais: "AUS",
     esCapitalDePais: false,
     coordenada: {
       latitud: -27.47045,
@@ -1703,6 +1873,7 @@ const ciudades = [
     nombre: "Darwin",
     pais: "Australia",
     continente: "Oceanía",
+    banderaDePais: "AUS",
     esCapitalDePais: false,
     coordenada: {
       latitud: -12.46373,
@@ -1713,6 +1884,7 @@ const ciudades = [
     nombre: "Hobart",
     pais: "Australia",
     continente: "Oceanía",
+    banderaDePais: "AUS",
     esCapitalDePais: false,
     coordenada: {
       latitud: -42.88261,
@@ -1723,6 +1895,7 @@ const ciudades = [
     nombre: "Wellington",
     pais: "Nueva Zelanda",
     continente: "Oceanía",
+    banderaDePais: "NZL",
     esCapitalDePais: true,
     coordenada: {
       latitud: -41.29238,
@@ -1733,6 +1906,7 @@ const ciudades = [
     nombre: "Auckland",
     pais: "Nueva Zelanda",
     continente: "Oceanía",
+    banderaDePais: "NZL",
     esCapitalDePais: false,
     coordenada: {
       latitud: -36.85088,
@@ -1743,6 +1917,7 @@ const ciudades = [
     nombre: "Queenstown",
     pais: "Nueva Zelanda",
     continente: "Oceanía",
+    banderaDePais: "NZL",
     esCapitalDePais: false,
     coordenada: {
       latitud: -45.03015,
@@ -1753,6 +1928,7 @@ const ciudades = [
     nombre: "Suva",
     pais: "Fiyi",
     continente: "Oceanía",
+    banderaDePais: "FJI",
     esCapitalDePais: true,
     coordenada: {
       latitud: -18.12656,
@@ -1763,6 +1939,7 @@ const ciudades = [
     nombre: "Nadi",
     pais: "Fiyi",
     continente: "Oceanía",
+    banderaDePais: "FJI",
     esCapitalDePais: false,
     coordenada: {
       latitud: -17.78063,
@@ -1773,6 +1950,7 @@ const ciudades = [
     nombre: "Honiara",
     pais: "Islas Salomón",
     continente: "Oceanía",
+    banderaDePais: "SLB",
     esCapitalDePais: true,
     coordenada: {
       latitud: -9.43067,
@@ -1783,6 +1961,7 @@ const ciudades = [
     nombre: "Apia",
     pais: "Samoa",
     continente: "Oceanía",
+    banderaDePais: "WSM",
     esCapitalDePais: true,
     coordenada: {
       latitud: -13.83161,
@@ -1793,6 +1972,7 @@ const ciudades = [
     nombre: "Majuro",
     pais: "Islas Marshall",
     continente: "Oceanía",
+    banderaDePais: "MHL",
     esCapitalDePais: true,
     coordenada: {
       latitud: 7.09157,
@@ -1805,6 +1985,8 @@ const ciudades = [
 * Ayuda: https://www.geodatos.net/coordenadas
 * 180 ciudades: 60 de Europa, 60 de América,
 * 25 de Asia, 20 de África y 15 de Oceanía.
+* Banderas nombradas según los códigos ISO
+* https://es.wikipedia.org/wiki/ISO_3166-1
 * Hay 20 ciudades de España y 20 de EE.UU.
 * Hay 82 países distintos y 77 capitales.
 * Los 5 países sin capitales son: Suiza,
