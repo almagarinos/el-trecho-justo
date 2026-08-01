@@ -18,15 +18,15 @@ let NUM_JUGADORES; // Número total de jugadores
 const seleccionCiudades = [];
 for (let i = 0; i < ciudades.length; i++) {
   // Aquí seleccionamos sólo las españolas
+  /*
   if (ciudades[i].pais == "España") {
     seleccionCiudades.push(ciudades[i]);
   }
-  /*
+  */
   // Se podrían añadir como queramos
-  if (ciudades[i].continente == "África") {
+  if (ciudades[i].continente == "Europa") {
     seleccionCiudades.push(ciudades[i]);
   }
-  */
 }
 
 
@@ -106,12 +106,12 @@ function generarPregunta() {
   ciudad2 = seleccionCiudades[indice2];
 
   // Mostramos sus nombres en la pregunta
-  document.getElementById("ciudadA").textContent = ciudad1.nombre;
-  document.getElementById("ciudadB").textContent = ciudad2.nombre;
+  // document.getElementById("ciudadA").textContent = ciudad1.nombre;
+  // document.getElementById("ciudadB").textContent = ciudad2.nombre;
   
   // Versión de lo anterior, con una pista, donde se muestra el país entre paréntesis
-  // document.getElementById("ciudadA").textContent = `${ciudad1.nombre} (${ciudad1.pais})`;
-  // document.getElementById("ciudadB").textContent = `${ciudad2.nombre} (${ciudad2.pais})`;
+  document.getElementById("ciudadA").textContent = `${ciudad1.nombre} (${ciudad1.pais})`;
+  document.getElementById("ciudadB").textContent = `${ciudad2.nombre} (${ciudad2.pais})`;
   
   // Procedemos al cálculo de la respuesta exacta
   distanciaCorrecta = calcularDistancia(
