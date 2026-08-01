@@ -200,26 +200,6 @@ const ciudades = [
     }
   },
   {
-    nombre: "París",
-    pais: "Francia",
-    continente: "Europa",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 48.85755,
-      longitud: 2.35138
-    }
-  },
-  {
-    nombre: "Londres",
-    pais: "Reino Unido",
-    continente: "Europa",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 51.50722,
-      longitud: -0.12759
-    }
-  },
-  {
     nombre: "Roma",
     pais: "Italia",
     continente: "Europa",
@@ -227,86 +207,6 @@ const ciudades = [
     coordenada: {
       latitud: 41.89671,
       longitud: 12.4822
-    }
-  },
-  {
-    nombre: "Berlín",
-    pais: "Alemania",
-    continente: "Europa",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 52.52001,
-      longitud: 13.40495
-    }
-  },
-  {
-    nombre: "Lisboa",
-    pais: "Portugal",
-    continente: "Europa",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 38.72225,
-      longitud: -9.13934
-    }
-  },
-  {
-    nombre: "Ámsterdam",
-    pais: "Países Bajos",
-    continente: "Europa",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 52.36757,
-      longitud: 4.90414
-    }
-  },
-  {
-    nombre: "Viena",
-    pais: "Austria",
-    continente: "Europa",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 48.20807,
-      longitud: 16.37131
-    }
-  },
-  {
-    nombre: "Praga",
-    pais: "República Checa",
-    continente: "Europa",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 50.07554,
-      longitud: 14.4378
-    }
-  },
-  {
-    nombre: "Atenas",
-    pais: "Grecia",
-    continente: "Europa",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 37.98381,
-      longitud: 23.72754
-    }
-  },
-  {
-    nombre: "Marsella",
-    pais: "Francia",
-    continente: "Europa",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 43.30257,
-      longitud: 5.36907
-    }
-  },
-  {
-    nombre: "Lyon",
-    pais: "Francia",
-    continente: "Europa",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 45.76404,
-      longitud: 4.83566
     }
   },
   {
@@ -340,6 +240,26 @@ const ciudades = [
     }
   },
   {
+    nombre: "Palermo",
+    pais: "Italia",
+    continente: "Europa",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 38.11569,
+      longitud: 13.36146
+    }
+  },
+  {
+    nombre: "Berlín",
+    pais: "Alemania",
+    continente: "Europa",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 52.52001,
+      longitud: 13.40495
+    }
+  },
+  {
     nombre: "Hamburgo",
     pais: "Alemania",
     continente: "Europa",
@@ -360,33 +280,53 @@ const ciudades = [
     }
   },
   {
-    nombre: "Oporto",
-    pais: "Portugal",
+    nombre: "Colonia",
+    pais: "Alemania",
     continente: "Europa",
     esCapitalDePais: false,
     coordenada: {
-      latitud: 41.15794,
-      longitud: -8.62911
+      latitud: 50.93753,
+      longitud: 6.96028
     }
   },
   {
-    nombre: "Róterdam",
-    pais: "Países Bajos",
-    continente: "Europa",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 51.92442,
-      longitud: 4.47773
-    }
-  },
-  {
-    nombre: "Dublín",
-    pais: "Irlanda",
+    nombre: "París",
+    pais: "Francia",
     continente: "Europa",
     esCapitalDePais: true,
     coordenada: {
-      latitud: 53.34981,
-      longitud: -6.26031
+      latitud: 48.85755,
+      longitud: 2.35138
+    }
+  },
+  {
+    nombre: "Marsella",
+    pais: "Francia",
+    continente: "Europa",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 43.30257,
+      longitud: 5.36907
+    }
+  },
+  {
+    nombre: "Lyon",
+    pais: "Francia",
+    continente: "Europa",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 45.76404,
+      longitud: 4.83566
+    }
+  },
+  {
+    nombre: "Londres",
+    pais: "Reino Unido",
+    continente: "Europa",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 51.50722,
+      longitud: -0.12759
     }
   },
   {
@@ -410,23 +350,43 @@ const ciudades = [
     }
   },
   {
-    nombre: "Kiev",
-    pais: "Ucrania",
+    nombre: "Lisboa",
+    pais: "Portugal",
     continente: "Europa",
     esCapitalDePais: true,
     coordenada: {
-      latitud: 50.45036,
-      longitud: 30.5245
+      latitud: 38.72225,
+      longitud: -9.13934
     }
   },
   {
-    nombre: "Palermo",
-    pais: "Italia",
+    nombre: "Oporto",
+    pais: "Portugal",
     continente: "Europa",
     esCapitalDePais: false,
     coordenada: {
-      latitud: 38.11569,
-      longitud: 13.36146
+      latitud: 41.15794,
+      longitud: -8.62911
+    }
+  },
+  {
+    nombre: "Ámsterdam",
+    pais: "Países Bajos",
+    continente: "Europa",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 52.36757,
+      longitud: 4.90414
+    }
+  },
+  {
+    nombre: "Róterdam",
+    pais: "Países Bajos",
+    continente: "Europa",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 51.92442,
+      longitud: 4.47773
     }
   },
   {
@@ -447,6 +407,96 @@ const ciudades = [
     coordenada: {
       latitud: 51.21993,
       longitud: 4.41499
+    }
+  },
+  {
+    nombre: "Varsovia",
+    pais: "Polonia",
+    continente: "Europa",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 52.22968,
+      longitud: 21.01227
+    }
+  },
+  {
+    nombre: "Cracovia",
+    pais: "Polonia",
+    continente: "Europa",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 50.06465,
+      longitud: 19.94498
+    }
+  },
+  {
+    nombre: "Zúrich",
+    pais: "Suiza",
+    continente: "Europa",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 47.37689,
+      longitud: 8.54169
+    }
+  },
+  {
+    nombre: "Ginebra",
+    pais: "Suiza",
+    continente: "Europa",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 46.20439,
+      longitud: 6.14316
+    }
+  },
+  {
+    nombre: "Viena",
+    pais: "Austria",
+    continente: "Europa",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 48.20807,
+      longitud: 16.37131
+    }
+  },
+  {
+    nombre: "Praga",
+    pais: "República Checa",
+    continente: "Europa",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 50.07554,
+      longitud: 14.4378
+    }
+  },
+  {
+    nombre: "Atenas",
+    pais: "Grecia",
+    continente: "Europa",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 37.98381,
+      longitud: 23.72754
+    }
+  },
+  {
+    nombre: "Dublín",
+    pais: "Irlanda",
+    continente: "Europa",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 53.34981,
+      longitud: -6.26031
+    }
+  },
+  {
+    nombre: "Kiev",
+    pais: "Ucrania",
+    continente: "Europa",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 50.45036,
+      longitud: 30.5245
     }
   },
   {
@@ -490,26 +540,6 @@ const ciudades = [
     }
   },
   {
-    nombre: "Varsovia",
-    pais: "Polonia",
-    continente: "Europa",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 52.22968,
-      longitud: 21.01227
-    }
-  },
-  {
-    nombre: "Cracovia",
-    pais: "Polonia",
-    continente: "Europa",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 50.06465,
-      longitud: 19.94498
-    }
-  },
-  {
     nombre: "Budapest",
     pais: "Hungría",
     continente: "Europa",
@@ -540,26 +570,6 @@ const ciudades = [
     }
   },
   {
-    nombre: "Zúrich",
-    pais: "Suiza",
-    continente: "Europa",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 47.37689,
-      longitud: 8.54169
-    }
-  },
-  {
-    nombre: "Ginebra",
-    pais: "Suiza",
-    continente: "Europa",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 46.20439,
-      longitud: 6.14316
-    }
-  },
-  {
     nombre: "Belgrado",
     pais: "Serbia",
     continente: "Europa",
@@ -587,16 +597,6 @@ const ciudades = [
     coordenada: {
       latitud: 56.96769,
       longitud: 24.10562
-    }
-  },
-  {
-    nombre: "Colonia",
-    pais: "Alemania",
-    continente: "Europa",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 50.93753,
-      longitud: 6.96028
     }
   },
   {
@@ -647,366 +647,6 @@ const ciudades = [
     coordenada: {
       latitud: 36.17156,
       longitud: -115.1391
-    }
-  },
-  {
-    nombre: "Ciudad de México",
-    pais: "México",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 19.43261,
-      longitud: -99.13321
-    }
-  },
-  {
-    nombre: "Tijuana",
-    pais: "México",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 32.5332,
-      longitud: -117.01928
-    }
-  },
-  {
-    nombre: "Bogotá",
-    pais: "Colombia",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 4.71099,
-      longitud: -74.07209
-    }
-  },
-  {
-    nombre: "Medellín",
-    pais: "Colombia",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 6.24764,
-      longitud: -75.56582
-    }
-  },
-  {
-    nombre: "Cali",
-    pais: "Colombia",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 3.45165,
-      longitud: -76.53199
-    }
-  },
-  {
-    nombre: "Brasilia",
-    pais: "Brasil",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: -15.79752,
-      longitud: -47.89189
-    }
-  },
-  {
-    nombre: "Río de Janeiro",
-    pais: "Brasil",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: -22.90685,
-      longitud: -43.1729
-    }
-  },
-  {
-    nombre: "Buenos Aires",
-    pais: "Argentina",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: -34.60367,
-      longitud: -58.38212
-    }
-  },
-  {
-    nombre: "Otawa",
-    pais: "Canadá",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 45.42006,
-      longitud: -75.70034
-    }
-  },
-  {
-    nombre: "Toronto",
-    pais: "Canadá",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 43.65483,
-      longitud: -79.38845
-    }
-  },
-  {
-    nombre: "Vancouver",
-    pais: "Canadá",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 49.28273,
-      longitud: -123.12074
-    }
-  },
-  {
-    nombre: "Montreal",
-    pais: "Canadá",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 45.50189,
-      longitud: -73.56739
-    }
-  },
-  {
-    nombre: "Monterrey",
-    pais: "México",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 25.68661,
-      longitud: -100.31611
-    }
-  },
-  {
-    nombre: "La Habana",
-    pais: "Cuba",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 23.13387,
-      longitud: -82.35857
-    }
-  },
-  {
-    nombre: "Santiago de Cuba",
-    pais: "Cuba",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 20.01693,
-      longitud: -75.83015
-    }
-  },
-  {
-    nombre: "Santo Domingo",
-    pais: "República Dominicana",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 18.46262,
-      longitud: -69.93609
-    }
-  },
-  {
-    nombre: "Punta Cana",
-    pais: "República Dominicana",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 18.56008,
-      longitud: -68.37253
-    }
-  },
-  {
-    nombre: "Ciudad de Panamá",
-    pais: "Panamá",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 8.98238,
-      longitud: -79.51987
-    }
-  },
-  {
-    nombre: "Managua",
-    pais: "Nicaragua",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 12.11499,
-      longitud: -86.23617
-    }
-  },
-  {
-    nombre: "Tegucigalpa",
-    pais: "Honduras",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 14.06071,
-      longitud: -87.18245
-    }
-  },
-  {
-    nombre: "San Salvador",
-    pais: "El Salvador",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 13.69806,
-      longitud: -89.19153
-    }
-  },
-  {
-    nombre: "Ciudad de Guatemala",
-    pais: "Guatemala",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 14.63491,
-      longitud: -90.50688
-    }
-  },
-  {
-    nombre: "Quito",
-    pais: "Ecuador",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: -0.22325,
-      longitud: -78.51411
-    }
-  },
-  {
-    nombre: "Lima",
-    pais: "Perú",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: -12.04669,
-      longitud: -77.04309
-    }
-  },
-  {
-    nombre: "Cusco",
-    pais: "Perú",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: -13.53195,
-      longitud: -71.96746
-    }
-  },
-  {
-    nombre: "Rosario",
-    pais: "Argentina",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: -32.9587,
-      longitud: -60.69304
-    }
-  },
-  {
-    nombre: "Santa Cruz de la Sierra",
-    pais: "Bolivia",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: -17.79807,
-      longitud: -63.19251
-    }
-  },
-  {
-    nombre: "Montevideo",
-    pais: "Uruguay",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: -34.9055,
-      longitud: -56.18511
-    }
-  },
-  {
-    nombre: "Punta del Este",
-    pais: "Uruguay",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: -34.93606,
-      longitud: -54.93781
-    }
-  },
-  {
-    nombre: "Santiago de Chile",
-    pais: "Chile",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: -33.44889,
-      longitud: -70.66927
-    }
-  },
-  {
-    nombre: "Valparaíso",
-    pais: "Chile",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: -33.04731,
-      longitud: -71.61275
-    }
-  },
-  {
-    nombre: "Mendoza",
-    pais: "Argentina",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: -32.88946,
-      longitud: -68.84584
-    }
-  },
-  {
-    nombre: "Caracas",
-    pais: "Venezuela",
-    continente: "América",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 10.5017,
-      longitud: -66.91111
-    }
-  },
-  {
-    nombre: "Maracaibo",
-    pais: "Venezuela",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 10.64101,
-      longitud: -71.60738
-    }
-  },
-  {
-    nombre: "Cochabamba",
-    pais: "Bolivia",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: -17.38201,
-      longitud: -66.15958
-    }
-  },
-  {
-    nombre: "São Paulo",
-    pais: "Brasil",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: -23.55577,
-      longitud: -46.63956
     }
   },
   {
@@ -1110,36 +750,6 @@ const ciudades = [
     }
   },
   {
-    nombre: "Cancún",
-    pais: "México",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 21.16191,
-      longitud: -86.85153
-    }
-  },
-  {
-    nombre: "Veracruz",
-    pais: "México",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 19.17377,
-      longitud: -96.13422
-    }
-  },
-  {
-    nombre: "Acapulco",
-    pais: "México",
-    continente: "América",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 16.86395,
-      longitud: -99.88228
-    }
-  },
-  {
     nombre: "Denver",
     pais: "Estados Unidos",
     continente: "América",
@@ -1190,6 +800,96 @@ const ciudades = [
     }
   },
   {
+    nombre: "Ciudad de México",
+    pais: "México",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 19.43261,
+      longitud: -99.13321
+    }
+  },
+  {
+    nombre: "Tijuana",
+    pais: "México",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 32.5332,
+      longitud: -117.01928
+    }
+  },
+  {
+    nombre: "Monterrey",
+    pais: "México",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 25.68661,
+      longitud: -100.31611
+    }
+  },
+  {
+    nombre: "Cancún",
+    pais: "México",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 21.16191,
+      longitud: -86.85153
+    }
+  },
+  {
+    nombre: "Veracruz",
+    pais: "México",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 19.17377,
+      longitud: -96.13422
+    }
+  },
+  {
+    nombre: "Acapulco",
+    pais: "México",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 16.86395,
+      longitud: -99.88228
+    }
+  },
+  {
+    nombre: "Bogotá",
+    pais: "Colombia",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 4.71099,
+      longitud: -74.07209
+    }
+  },
+  {
+    nombre: "Medellín",
+    pais: "Colombia",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 6.24764,
+      longitud: -75.56582
+    }
+  },
+  {
+    nombre: "Cali",
+    pais: "Colombia",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 3.45165,
+      longitud: -76.53199
+    }
+  },
+  {
     nombre: "Cartagena de Indias",
     pais: "Colombia",
     continente: "América",
@@ -1200,23 +900,303 @@ const ciudades = [
     }
   },
   {
-    nombre: "Tokio",
-    pais: "Japón",
-    continente: "Asia",
+    nombre: "Otawa",
+    pais: "Canadá",
+    continente: "América",
     esCapitalDePais: true,
     coordenada: {
-      latitud: 35.6895,
-      longitud: 139.69171
+      latitud: 45.42006,
+      longitud: -75.70034
     }
   },
   {
-    nombre: "Kabul",
-    pais: "Afganistán",
-    continente: "Asia",
+    nombre: "Toronto",
+    pais: "Canadá",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 43.65483,
+      longitud: -79.38845
+    }
+  },
+  {
+    nombre: "Vancouver",
+    pais: "Canadá",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 49.28273,
+      longitud: -123.12074
+    }
+  },
+  {
+    nombre: "Montreal",
+    pais: "Canadá",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 45.50189,
+      longitud: -73.56739
+    }
+  },
+  {
+    nombre: "Brasilia",
+    pais: "Brasil",
+    continente: "América",
     esCapitalDePais: true,
     coordenada: {
-      latitud: 34.55535,
-      longitud: 69.20749
+      latitud: -15.79752,
+      longitud: -47.89189
+    }
+  },
+  {
+    nombre: "Río de Janeiro",
+    pais: "Brasil",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: -22.90685,
+      longitud: -43.1729
+    }
+  },
+  {
+    nombre: "São Paulo",
+    pais: "Brasil",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: -23.55577,
+      longitud: -46.63956
+    }
+  },
+  {
+    nombre: "Buenos Aires",
+    pais: "Argentina",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: -34.60367,
+      longitud: -58.38212
+    }
+  },
+  {
+    nombre: "Rosario",
+    pais: "Argentina",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: -32.9587,
+      longitud: -60.69304
+    }
+  },
+  {
+    nombre: "Mendoza",
+    pais: "Argentina",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: -32.88946,
+      longitud: -68.84584
+    }
+  },
+  {
+    nombre: "La Habana",
+    pais: "Cuba",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 23.13387,
+      longitud: -82.35857
+    }
+  },
+  {
+    nombre: "Santiago de Cuba",
+    pais: "Cuba",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 20.01693,
+      longitud: -75.83015
+    }
+  },
+  {
+    nombre: "Santo Domingo",
+    pais: "República Dominicana",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 18.46262,
+      longitud: -69.93609
+    }
+  },
+  {
+    nombre: "Punta Cana",
+    pais: "República Dominicana",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 18.56008,
+      longitud: -68.37253
+    }
+  },
+  {
+    nombre: "Lima",
+    pais: "Perú",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: -12.04669,
+      longitud: -77.04309
+    }
+  },
+  {
+    nombre: "Cusco",
+    pais: "Perú",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: -13.53195,
+      longitud: -71.96746
+    }
+  },
+  {
+    nombre: "Santa Cruz de la Sierra",
+    pais: "Bolivia",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: -17.79807,
+      longitud: -63.19251
+    }
+  },
+  {
+    nombre: "Cochabamba",
+    pais: "Bolivia",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: -17.38201,
+      longitud: -66.15958
+    }
+  },
+  {
+    nombre: "Montevideo",
+    pais: "Uruguay",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: -34.9055,
+      longitud: -56.18511
+    }
+  },
+  {
+    nombre: "Punta del Este",
+    pais: "Uruguay",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: -34.93606,
+      longitud: -54.93781
+    }
+  },
+  {
+    nombre: "Santiago de Chile",
+    pais: "Chile",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: -33.44889,
+      longitud: -70.66927
+    }
+  },
+  {
+    nombre: "Valparaíso",
+    pais: "Chile",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: -33.04731,
+      longitud: -71.61275
+    }
+  },
+  {
+    nombre: "Caracas",
+    pais: "Venezuela",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 10.5017,
+      longitud: -66.91111
+    }
+  },
+  {
+    nombre: "Maracaibo",
+    pais: "Venezuela",
+    continente: "América",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 10.64101,
+      longitud: -71.60738
+    }
+  },
+  {
+    nombre: "Ciudad de Panamá",
+    pais: "Panamá",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 8.98238,
+      longitud: -79.51987
+    }
+  },
+  {
+    nombre: "Managua",
+    pais: "Nicaragua",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 12.11499,
+      longitud: -86.23617
+    }
+  },
+  {
+    nombre: "Tegucigalpa",
+    pais: "Honduras",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 14.06071,
+      longitud: -87.18245
+    }
+  },
+  {
+    nombre: "San Salvador",
+    pais: "El Salvador",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 13.69806,
+      longitud: -89.19153
+    }
+  },
+  {
+    nombre: "Ciudad de Guatemala",
+    pais: "Guatemala",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 14.63491,
+      longitud: -90.50688
+    }
+  },
+  {
+    nombre: "Quito",
+    pais: "Ecuador",
+    continente: "América",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: -0.22325,
+      longitud: -78.51411
     }
   },
   {
@@ -1240,23 +1220,13 @@ const ciudades = [
     }
   },
   {
-    nombre: "Seúl",
-    pais: "Corea del Sur",
-    continente: "Asia",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 37.566,
-      longitud: 126.9784
-    }
-  },
-  {
-    nombre: "Bombay",
-    pais: "India",
+    nombre: "Hong Kong",
+    pais: "China",
     continente: "Asia",
     esCapitalDePais: false,
     coordenada: {
-      latitud: 18.95823,
-      longitud: 72.83195
+      latitud: 22.27832,
+      longitud: 114.17469
     }
   },
   {
@@ -1270,13 +1240,83 @@ const ciudades = [
     }
   },
   {
-    nombre: "Hong Kong",
-    pais: "China",
+    nombre: "Bombay",
+    pais: "India",
     continente: "Asia",
     esCapitalDePais: false,
     coordenada: {
-      latitud: 22.27832,
-      longitud: 114.17469
+      latitud: 18.95823,
+      longitud: 72.83195
+    }
+  },
+  {
+    nombre: "Calcuta",
+    pais: "India",
+    continente: "Asia",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 22.57435,
+      longitud: 88.36287
+    }
+  },
+  {
+    nombre: "Tokio",
+    pais: "Japón",
+    continente: "Asia",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 35.6895,
+      longitud: 139.69171
+    }
+  },
+  {
+    nombre: "Kioto",
+    pais: "Japón",
+    continente: "Asia",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 35.01156,
+      longitud: 135.76815
+    }
+  },
+  {
+    nombre: "Abu Dabi",
+    pais: "Emiratos Árabes Unidos",
+    continente: "Asia",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 24.45388,
+      longitud: 54.37734
+    }
+  },
+  {
+    nombre: "Dubái",
+    pais: "Emiratos Árabes Unidos",
+    continente: "Asia",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 25.20485,
+      longitud: 55.27078
+    }
+  },
+  {
+    nombre: "Kabul",
+    pais: "Afganistán",
+    continente: "Asia",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 34.55535,
+      longitud: 69.20749
+    }
+  },
+  {
+    nombre: "Seúl",
+    pais: "Corea del Sur",
+    continente: "Asia",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 37.566,
+      longitud: 126.9784
     }
   },
   {
@@ -1320,26 +1360,6 @@ const ciudades = [
     }
   },
   {
-    nombre: "Dubái",
-    pais: "Emiratos Árabes Unidos",
-    continente: "Asia",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 25.20485,
-      longitud: 55.27078
-    }
-  },
-  {
-    nombre: "Abu Dabi",
-    pais: "Emiratos Árabes Unidos",
-    continente: "Asia",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 24.45388,
-      longitud: 54.37734
-    }
-  },
-  {
     nombre: "Damasco",
     pais: "Siria",
     continente: "Asia",
@@ -1360,16 +1380,6 @@ const ciudades = [
     }
   },
   {
-    nombre: "Kioto",
-    pais: "Japón",
-    continente: "Asia",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 35.01156,
-      longitud: 135.76815
-    }
-  },
-  {
     nombre: "Ankara",
     pais: "Turquía",
     continente: "Asia",
@@ -1377,16 +1387,6 @@ const ciudades = [
     coordenada: {
       latitud: 39.93336,
       longitud: 32.85974
-    }
-  },
-  {
-    nombre: "Calcuta",
-    pais: "India",
-    continente: "Asia",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 22.57435,
-      longitud: 88.36287
     }
   },
   {
@@ -1450,36 +1450,6 @@ const ciudades = [
     }
   },
   {
-    nombre: "El Cairo",
-    pais: "Egipto",
-    continente: "África",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 30.04442,
-      longitud: 31.23571
-    }
-  },
-  {
-    nombre: "Alejandría",
-    pais: "Egipto",
-    continente: "África",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 31.20009,
-      longitud: 29.91874
-    }
-  },
-  {
-    nombre: "Casablanca",
-    pais: "Marruecos",
-    continente: "África",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 33.57311,
-      longitud: -7.58984
-    }
-  },
-  {
     nombre: "Rabat",
     pais: "Marruecos",
     continente: "África",
@@ -1490,33 +1460,13 @@ const ciudades = [
     }
   },
   {
-    nombre: "Johannesburgo",
-    pais: "Sudáfrica",
+    nombre: "Casablanca",
+    pais: "Marruecos",
     continente: "África",
     esCapitalDePais: false,
     coordenada: {
-      latitud: -26.20565,
-      longitud: 28.03372
-    }
-  },
-  {
-    nombre: "Praia",
-    pais: "Cabo Verde",
-    continente: "África",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: 14.91977,
-      longitud: -23.50734
-    }
-  },
-  {
-    nombre: "Nairobi",
-    pais: "Kenia",
-    continente: "África",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: -1.29207,
-      longitud: 36.82195
+      latitud: 33.57311,
+      longitud: -7.58984
     }
   },
   {
@@ -1547,6 +1497,76 @@ const ciudades = [
     coordenada: {
       latitud: 35.75947,
       longitud: -5.83395
+    }
+  },
+  {
+    nombre: "El Cairo",
+    pais: "Egipto",
+    continente: "África",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 30.04442,
+      longitud: 31.23571
+    }
+  },
+  {
+    nombre: "Alejandría",
+    pais: "Egipto",
+    continente: "África",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 31.20009,
+      longitud: 29.91874
+    }
+  },
+  {
+    nombre: "Luxor",
+    pais: "Egipto",
+    continente: "África",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 25.68724,
+      longitud: 32.63964
+    }
+  },
+  {
+    nombre: "Asuán",
+    pais: "Egipto",
+    continente: "África",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: 24.08894,
+      longitud: 32.89983
+    }
+  },
+  {
+    nombre: "Johannesburgo",
+    pais: "Sudáfrica",
+    continente: "África",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: -26.20565,
+      longitud: 28.03372
+    }
+  },
+  {
+    nombre: "Praia",
+    pais: "Cabo Verde",
+    continente: "África",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: 14.91977,
+      longitud: -23.50734
+    }
+  },
+  {
+    nombre: "Nairobi",
+    pais: "Kenia",
+    continente: "África",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: -1.29207,
+      longitud: 36.82195
     }
   },
   {
@@ -1587,26 +1607,6 @@ const ciudades = [
     coordenada: {
       latitud: 36.77638,
       longitud: 3.05861
-    }
-  },
-  {
-    nombre: "Luxor",
-    pais: "Egipto",
-    continente: "África",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 25.68724,
-      longitud: 32.63964
-    }
-  },
-  {
-    nombre: "Asuán",
-    pais: "Egipto",
-    continente: "África",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: 24.08894,
-      longitud: 32.89983
     }
   },
   {
@@ -1680,26 +1680,6 @@ const ciudades = [
     }
   },
   {
-    nombre: "Auckland",
-    pais: "Nueva Zelanda",
-    continente: "Oceanía",
-    esCapitalDePais: false,
-    coordenada: {
-      latitud: -36.85088,
-      longitud: 174.76449
-    }
-  },
-  {
-    nombre: "Wellington",
-    pais: "Nueva Zelanda",
-    continente: "Oceanía",
-    esCapitalDePais: true,
-    coordenada: {
-      latitud: -41.29238,
-      longitud: 174.77875
-    }
-  },
-  {
     nombre: "Adelaida",
     pais: "Australia",
     continente: "Oceanía",
@@ -1737,6 +1717,26 @@ const ciudades = [
     coordenada: {
       latitud: -42.88261,
       longitud: 147.32572
+    }
+  },
+  {
+    nombre: "Wellington",
+    pais: "Nueva Zelanda",
+    continente: "Oceanía",
+    esCapitalDePais: true,
+    coordenada: {
+      latitud: -41.29238,
+      longitud: 174.77875
+    }
+  },
+  {
+    nombre: "Auckland",
+    pais: "Nueva Zelanda",
+    continente: "Oceanía",
+    esCapitalDePais: false,
+    coordenada: {
+      latitud: -36.85088,
+      longitud: 174.76449
     }
   },
   {
