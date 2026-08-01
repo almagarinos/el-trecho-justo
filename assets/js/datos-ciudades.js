@@ -1350,13 +1350,13 @@ const ciudades = [
     }
   },
   {
-    nombre: "Taipéi",
-    pais: "Taiwán",
+    nombre: "Malé",
+    pais: "Maldivas",
     continente: "Asia",
     esCapitalDePais: true,
     coordenada: {
-      latitud: 25.03297,
-      longitud: 121.56542
+      latitud: 4.17521,
+      longitud: 73.50916
     }
   },
   {
