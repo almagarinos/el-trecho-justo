@@ -1,0 +1,73 @@
+body {
+  background-color: #2a2f4d;
+  color: #4a4e69;
+  padding: 20px;
+}
+
+.contenedor-paises {
+  max-width: 1800px;
+  margin: auto;
+  background: #fdf5e6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+  row-rule: 2px solid #4a5585;
+  column-rule: 2px solid #4a5585;
+}
+
+.casilla {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.texto-repartido {
+  text-wrap: balance;
+}
+
+@media (max-width: 1700px) {
+  .cuadricula {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 1525px) {
+  .cuadricula {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1325px) {
+  .cuadricula {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1125px) {
+  .cuadricula {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .cuadricula {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 715px) {
+  .cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cuadricula {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
