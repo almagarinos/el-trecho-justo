@@ -5,14 +5,16 @@ Juego familiar, inspirado en el popular concurso de televisión "El Precio Justo
 Por tanto, cada jugador debe estimar la longitud entre dos puntos geográficos, en línea recta, sobre la superficie terrestre. Es decir, hay que calcular mentalmente la distancia más corta que volaría un dron desde el centro de una ciudad hasta el centro de la otra.
 
 
-## 📈 Versión 1.1.5
+## 📈 Versión 1.2.0
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000) ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff) ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)
 
 Esta es una versión estable del proyecto, desarrollada únicamente con tecnologías Front-End nativas: JavaScript, HTML y CSS. Se utiliza la librería de estilos Bootstrap de manera local.
 
 Se ha testado con éxito en diferentes tamaños de pantalla y la aplicación no necesita procesos de compilación, ni instalación de dependencias, ni conexión a Internet.
 
-En esta versión aparecen ciudades europeas, en total 60, que suponen 1770 preguntas diferentes. El número de jugadores se elige al inicio, pudiendo participar entre 2 y 16 personas.
+En esta versión se permite elegir entre 8 opciones la lista de ciudades con la que jugar. También se permite elegir el número de jugadores, pudiendo participar entre 2 y 16 personas.
+
+Tanto la lista de ciudades como el número de jugadores se guarda en el `localStorage`, pero se pueden volver a modificar en cualquier momento con una partida ya iniciada.
 
 
 ## 🎮 Jugar *online*
@@ -50,7 +52,6 @@ el-trecho-justo/
 │   │
 │   ├── css/
 │   │   ├── bootstrap.min.css   # Librería Bootstrap v4.4.1
-│   │   ├── lists-styles.css    # Estilos propios de las listas
 │   │   └── styles.css          # Estilos propios de la aplicación
 │   │
 │   ├── icon/
@@ -61,7 +62,8 @@ el-trecho-justo/
 │   │
 │   └── js/
 │       ├── app.js              # Lógica principal del juego, incluye comentarios
-│       └── datos-ciudades.js   # Base de datos (BD) usada para las preguntas
+│       ├── datos-ciudades.js   # Base de datos (BD) usada para las preguntas
+│       └── lists-script.js     # Lógica común de las funciones en lists/
 │
 ├── lists/
 │   └── ...                     # Listas de países según el filtro en la BD
@@ -76,16 +78,28 @@ El flujo de la aplicación se repite cíclicamente tras crear los puestos de jug
 
 ```bash
     ┌───────────────────────┐
-    │   Indicación del nº   │   # Visible en la interfaz
-    │  número de jugadores  │
-    └───────────┬───────────┘
-                │
+    │ Consulta de ciudades  │     No hay dato
+    │  en el localStorage   ├─────────────────────┐
+    └───────────┬───────────┘                     │
+                │ Hay dato                        │
+                ▼                                 ▼
+    ┌───────────────────────┐         ┌───────────────────────┐
+    │ Filtrado de ciudades  │ ← ──────┤ Selección de lista de │
+    │  de la base de datos  │         │  ciudades para jugar  │
+    └───────────┬───────────┘         └───────────────────────┘
+                │                       # Visible en interfaz
                 ▼
     ┌───────────────────────┐
-    │  Creación de puestos  │
-    │  de jugador e inputs  │
-    └───────────┬───────────┘
-                │
+    │ Consulta de jugadores │     No hay dato
+    │  en el localStorage   ├─────────────────────┐
+    └───────────┬───────────┘                     │
+                │ Hay dato                        │
+                ▼                                 ▼
+    ┌───────────────────────┐         ┌───────────────────────┐
+    │  Creación de puestos  │ ← ──────│   Indicación del nº   │
+    │  de jugador e inputs  │         │  número de jugadores  │
+    └───────────┬───────────┘         └───────────────────────┘
+                │                       # Visible en interfaz
                 ▼
     ┌───────────────────────┐
 ┌───┤   Selección de dos    │
@@ -219,16 +233,14 @@ Las coordenadas se han obtenido de la API de Google Places, con un margen de err
 En el archivo `el-trecho-justo/assets/js/app.js` se puede hacer el filtrado de la base de datos. La clave es el *array* `seleccionCiudades`:
 
 ```javascript
-const seleccionCiudades = [];
 for (let i = 0; i < ciudades.length; i++) {
-  // Aquí seleccionamos sólo las españolas
   if (ciudades[i].pais == "España") {
     seleccionCiudades.push(ciudades[i]);
   }
 }
 ```
 
-En esta versión actual, la base de datos está filtrada para jugar solamente con ciudades europeas, pero esto se podría modificar. Por ejemplo:
+En el ejemplo anterior, la base de datos se filtra para jugar solamente con ciudades españolas, pero esto se puede modificar en el `if`. Por ejemplo:
 
 | Condición de filtrado                       | Ciudades seleccionadas    |
 |---------------------------------------------|---------------------------|
@@ -237,4 +249,12 @@ En esta versión actual, la base de datos está filtrada para jugar solamente co
 | `if (ciudades[i].esCapitalDePais)`          | Sólo capitales de país    |
 | `if (ciudades[i].coordenada.latitud >= 0)`  | Sólo del hemisferio norte |
 
-A partir de lo anterior, se pueden aplicar más combinaciones. El filtrado dinámico elegido por el jugador está contemplado en versiones futuras.
+A partir de lo anterior, se pueden aplicar más combinaciones. El filtrado elegido por el jugador está fijado actualmente en estas 8 opciones:
+- España
+- Estados Unidos
+- Europa
+- América
+- Asia
+- África
+- Oceanía
+- El Mundo

@@ -2,32 +2,20 @@
 let ciudad1;
 let ciudad2;
 let distanciaCorrecta;
+let datoLocalListaCiudades = localStorage.getItem("Lista de ciudades");
+let datoLocalNumJugadores = localStorage.getItem("Número de jugadores");
+let NUM_JUGADORES; // Número total de jugadores, puede variar en la partida
 const campoResultado = document.getElementById("cuadroResultado");
 const dialogAvisos = document.querySelector('#dialogoAvisos');
 const txtAviso = document.querySelector('#textoAviso');
 const btnContinuar = document.querySelector('#botonContinuar');
 const dialogNumJugadores = document.querySelector('#dialogoNumJugadores');
+const dialogListaCiudades = document.querySelector('#dialogoListaCiudades');
 const btnConfirmar = document.querySelector('#botonConfirmar');
-//const puestosDeJugador = document.getElementsByClassName("jugador");
 const paneldeJugadores = document.getElementById("panelJugadores");
-//const NUM_JUGADORES = puestosDeJugador.length; // Número total de jugadores
-let NUM_JUGADORES; // Número total de jugadores
 //const seleccionCiudades = ciudades; // Todas las disponibles en datos-ciudades.js
-
 // Lo siguiente es la alternativa a lo anterior, donde se hace un filtrado de ciudades
 const seleccionCiudades = [];
-for (let i = 0; i < ciudades.length; i++) {
-  // Aquí seleccionamos sólo las españolas
-  /*
-  if (ciudades[i].pais == "España") {
-    seleccionCiudades.push(ciudades[i]);
-  }
-  */
-  // Se podrían añadir como queramos
-  if (ciudades[i].continente == "Europa") {
-    seleccionCiudades.push(ciudades[i]);
-  }
-}
 
 
 
@@ -69,6 +57,7 @@ function calcularDistancia(latitud1, longitud1, latitud2, longitud2) {
 }
 
 
+
 // Genera la pregunta aleatoria del concurso entre las ciudades seleccionadas
 function generarPregunta() {
   // Subimos hasta arriba para leer bien la pregunta si venimos de una respuesta anterior, útil para mobile
@@ -105,14 +94,15 @@ function generarPregunta() {
   ciudad1 = seleccionCiudades[indice1];
   ciudad2 = seleccionCiudades[indice2];
 
-  // Mostramos sus nombres en la pregunta
-  // document.getElementById("ciudadA").textContent = ciudad1.nombre;
-  // document.getElementById("ciudadB").textContent = ciudad2.nombre;
-  
-  // Versión de lo anterior, con una pista, donde se muestra el país entre paréntesis
-  document.getElementById("ciudadA").textContent = `${ciudad1.nombre} (${ciudad1.pais})`;
-  document.getElementById("ciudadB").textContent = `${ciudad2.nombre} (${ciudad2.pais})`;
-  
+  // Mostramos sus nombres en la pregunta. Si es de un mismo país, este ya no se indica.
+  if (datoLocalListaCiudades == "España" || datoLocalListaCiudades == "Estados Unidos") {
+    document.getElementById("ciudadA").textContent = ciudad1.nombre;
+    document.getElementById("ciudadB").textContent = ciudad2.nombre;
+  } else { // Versión de lo anterior, con una pista, donde se muestra el país entre paréntesis
+    document.getElementById("ciudadA").textContent = `${ciudad1.nombre} (${ciudad1.pais})`;
+    document.getElementById("ciudadB").textContent = `${ciudad2.nombre} (${ciudad2.pais})`;
+  }
+
   // Procedemos al cálculo de la respuesta exacta
   distanciaCorrecta = calcularDistancia(
     ciudad1.coordenada.latitud,
@@ -215,7 +205,7 @@ function comprobarRespuesta() {
 
 
 // Crea el HTML con todos los puestos de jugador con sus casillas de input
-function crearPanelDeJugadores ( numJugadores ) {
+function crearPanelDeJugadores() {
   // Preparamos cada panel de jugador
   let panelesJugadores = ``;
   for (let i = 0; i < NUM_JUGADORES; i++) {
@@ -259,20 +249,54 @@ function crearPartida() {
     return;
   }
 
+  localStorage.setItem("Número de jugadores",numeroJugadores);
+
   // Asignamos ese número a la variable global
   NUM_JUGADORES = numeroJugadores;
 
-  // Gestionamos el inputs para evitar cambiar la respuesta
-  casillaNumJugadores.disabled = true;
-
   // Creamos el panel de jugadores
-  crearPanelDeJugadores ( NUM_JUGADORES );
+  crearPanelDeJugadores();
 
   // Se finaliza generando la primera pregunta
   generarPregunta();
 
+  // Vaciamos el input para los futuros cambios
+  casillaNumJugadores.value = '';
+
   // Se cierra el actual cuadro de diálogo
   dialogNumJugadores.close();
+}
+
+
+
+// Abre el modal para elegir el mapa
+function elegirListaDeCiudades() {
+  dialogListaCiudades.showModal();
+}
+
+
+
+// Abre el modal para elegir el nº de jugadores
+function elegirNumeroDeJugadores() {
+  dialogNumJugadores.showModal();
+}
+
+
+
+// Comprueba si hay o no variable asignada en el localStorage
+function comprobarNumeroDeJugadores() {
+  if (datoLocalNumJugadores) {
+    // Asignamos ese número a la variable global
+    NUM_JUGADORES = datoLocalNumJugadores;
+
+    // Creamos el panel de jugadores
+    crearPanelDeJugadores();
+
+    // Se finaliza generando la primera pregunta
+    generarPregunta();
+  } else {
+    elegirNumeroDeJugadores();
+  }
 }
 
 
@@ -289,5 +313,61 @@ btnConfirmar.addEventListener('click', () => {
 
 
 
-// Se inicializa la app con una primera pregunta
-dialogNumJugadores.showModal();
+// Se inicia la aplicación comprobando las ciudades en el localStorage
+if(!datoLocalListaCiudades){
+  elegirListaDeCiudades();
+}else{
+  if ( datoLocalListaCiudades == "España") {
+    for (let i = 0; i < ciudades.length; i++) {
+      if (ciudades[i].pais == "España") {
+        seleccionCiudades.push(ciudades[i]);
+      }
+    }
+  } else if ( datoLocalListaCiudades == "Europa") {
+    for (let i = 0; i < ciudades.length; i++) {
+      if (ciudades[i].continente == "Europa") {
+        seleccionCiudades.push(ciudades[i]);
+      }
+    }
+  } else if ( datoLocalListaCiudades == "Estados Unidos") {
+    for (let i = 0; i < ciudades.length; i++) {
+      if (ciudades[i].pais == "Estados Unidos") {
+        seleccionCiudades.push(ciudades[i]);
+      }
+    }
+  } else if ( datoLocalListaCiudades == "América") {
+    for (let i = 0; i < ciudades.length; i++) {
+      if (ciudades[i].continente == "América") {
+        seleccionCiudades.push(ciudades[i]);
+      }
+    }
+  } else if ( datoLocalListaCiudades == "Asia") {
+    for (let i = 0; i < ciudades.length; i++) {
+      if (ciudades[i].continente == "Asia") {
+        seleccionCiudades.push(ciudades[i]);
+      }
+    }
+  } else if ( datoLocalListaCiudades == "África") {
+    for (let i = 0; i < ciudades.length; i++) {
+      if (ciudades[i].continente == "África") {
+        seleccionCiudades.push(ciudades[i]);
+      }
+    }
+  } else if ( datoLocalListaCiudades == "Oceanía") {
+    for (let i = 0; i < ciudades.length; i++) {
+      if (ciudades[i].continente == "Oceanía") {
+        seleccionCiudades.push(ciudades[i]);
+      }
+    }
+  } else if ( datoLocalListaCiudades == "El Mundo") {
+    for (let i = 0; i < ciudades.length; i++) {
+      seleccionCiudades.push(ciudades[i]);
+    }
+  } else {
+    console.warn("No se ha filtrado la lista de ciudades, se juega con el total de la base de datos.");
+    for (let i = 0; i < ciudades.length; i++) {
+      seleccionCiudades.push(ciudades[i]);
+    }
+  }
+  comprobarNumeroDeJugadores();
+}

@@ -11,7 +11,7 @@
 
         <!-- Estilos -->
         <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/css/lists-styles.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
         
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="../assets/icon/favicon.ico">
@@ -24,9 +24,14 @@
 
     <body>
 
-        <div class="contenedor-paises">
+        <div class="contenedor lista">
 
             <h3 class="text-center mb-3">🌎 Lista de Europa 🌍</h3>
+
+            <div class="botones lista">
+                <button class="boton mb-3 ml-2 mr-2" onclick="volverAlModalDeListas();">⬅ VOLVER A ELEGIR MAPA</button>
+                <button class="boton mb-3 ml-2 mr-2" onclick="confirmarLaLista('Europa');">JUGAR CON ESTA LISTA ➡</button>
+            </div>
 
             <div class="cuadricula">
 
@@ -164,6 +169,8 @@
             </div>
 
         </div>
+
+        <script src="../assets/js/lists-script.js"></script>
 
     </body>
 

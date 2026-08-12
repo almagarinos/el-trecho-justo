@@ -12,8 +12,32 @@ body {
   border-radius: 8px;
 }
 
-.text-repartido {
+.contenedor.lista {
+  max-width: 1800px;
+}
+
+.botones.lista {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.botones.lista .boton {
+  width: 265px;
+}
+
+.texto-repartido {
   text-wrap: balance;
+}
+
+.enlace:not([href]) {
+  color: blue;
+  cursor: pointer;
+}
+
+.enlace:not([href]):hover {
+  color: blue;
+  text-decoration: underline;
 }
 
 .ciudad {
@@ -85,12 +109,18 @@ body {
   background-color: #4a5585;
   color: white;
   font-weight: bold;
+  outline: none;
 }
 
 .boton:disabled {
   cursor: not-allowed;
   opacity: 0.5;
   display: none;
+}
+
+.boton:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .cuadroDialogo {
@@ -101,7 +131,7 @@ body {
   max-height: calc(100% - 80px);
 }
 
-.cuadroDialogo#dialogoNumJugadores {
+.cuadroDialogo#dialogoNumJugadores, .cuadroDialogo#dialogoListaCiudades {
   max-width: calc(100% - 40px);
   max-height: calc(100% - 40px);
 }
@@ -110,7 +140,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.cuadroDialogo#dialogoNumJugadores::backdrop {
+.cuadroDialogo#dialogoNumJugadores::backdrop, .cuadroDialogo#dialogoListaCiudades::backdrop {
   background-color: #2a2f4d;
 }
 
@@ -125,5 +155,61 @@ body {
 
   .paneles {
     grid-template-columns: 1fr;
+  }
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+  row-rule: 2px solid #4a5585;
+  column-rule: 2px solid #4a5585;
+}
+
+.casilla {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1700px) {
+  .cuadricula {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 1525px) {
+  .cuadricula {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1325px) {
+  .cuadricula {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1125px) {
+  .cuadricula {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .cuadricula {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 715px) {
+  .cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cuadricula {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

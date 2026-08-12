@@ -26,12 +26,14 @@
 
         <div class="contenedor">
 
-            <h3 class="text-repartido text-center mb-3">🌎 El Trecho Justo 🌍</h3>
-            <p class="text-repartido text-center mb-3">¡Estimen la distancia entre dos ciudades! 📏 La que volaría un dron en línea recta.</p>
-            <p class="text-repartido text-center mb-3">En esta versión les aparecerán 60 ciudades aleatorias de <a href="lists/lista-europa.html" target="_blank">estos 25 países</a> europeos.</p>
-            <h3 class="text-repartido text-center mb-3">
-                ¿Cuántos kilómetros hay entre <span id="ciudadA" class="ciudad"></span>
-                 y <span id="ciudadB" class="ciudad"></span>?
+            <h3 class="texto-repartido text-center mb-3">🌎 El Trecho Justo 🌍</h3>
+            <p class="texto-repartido text-center mb-3">¡Estimen la distancia entre dos ciudades! 📏 La que volaría un dron en línea recta.</p>
+            <p class="texto-repartido text-center mb-3">
+                Si quieren, pueden volver a escoger la <a class="enlace" onclick="elegirListaDeCiudades();">lista de
+                    ciudades</a> y el <a class="enlace" onclick="elegirNumeroDeJugadores();">número de jugadores</a>.
+            </p>
+            <h3 class="texto-repartido text-center mb-3">
+                ¿Cuántos kilómetros hay entre <span id="ciudadA" class="ciudad"></span> y <span id="ciudadB" class="ciudad"></span>?
             </h3>
 
             <div class="jugadores" id="panelJugadores"></div>
@@ -57,10 +59,25 @@
         </dialog>
 
         <dialog id="dialogoNumJugadores" class="cuadroDialogo">
-            <h3 class="text-repartido text-center mb-3">🌎 El Trecho Justo 🌍</h3>
-            <h5 class="text-repartido mb-3">Indique el número de jugadores:</h5>
+            <h3 class="texto-repartido text-center mb-3">🌎 El Trecho Justo 🌍</h3>
+            <h5 class="texto-repartido mb-3">Indique el número de jugadores:</h5>
             <input type="number" id="inputNumJugadores" class="mb-3" placeholder="Inserte un número del 2 al 16" min="2" max="16">
             <button class="boton" id="botonConfirmar">CONFIRMAR</button>
+        </dialog>
+
+        <dialog id="dialogoListaCiudades" class="cuadroDialogo">
+            <h3 class="texto-repartido text-center mb-3">🌎 El Trecho Justo 🌍</h3>
+            <h5 class="texto-repartido mb-3">Eliga el mapa con el que jugar:</h5>
+            <div class="paneles">
+                <a class="boton" href="lists/lista-esp.html">ESPAÑA</a>
+                <a class="boton" href="lists/lista-usa.html">EE. UU.</a>
+                <a class="boton" href="lists/lista-europa.html">EUROPA</a>
+                <a class="boton" href="lists/lista-america.html">AMÉRICA</a>
+                <a class="boton" href="lists/lista-asia.html">ASIA</a>
+                <a class="boton" href="lists/lista-africa.html">ÁFRICA</a>
+                <a class="boton" href="lists/lista-oceania.html">OCEANÍA</a>
+                <a class="boton" href="lists/lista-mundo.html">EL MUNDO</a>
+            </div>
         </dialog>
 
         <script src="assets/js/datos-ciudades.js"></script>
