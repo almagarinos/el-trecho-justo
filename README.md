@@ -5,7 +5,7 @@ Juego familiar, inspirado en el popular concurso de televisión "El Precio Justo
 Por tanto, cada jugador debe estimar la longitud entre dos puntos geográficos, en línea recta, sobre la superficie terrestre. Es decir, hay que calcular mentalmente la distancia más corta que volaría un dron desde el centro de una ciudad hasta el centro de la otra.
 
 
-## 📈 Versión 1.2.0
+## 📈 Versión 1.2.1
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000) ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff) ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)
 
 Esta es una versión estable del proyecto, desarrollada únicamente con tecnologías Front-End nativas: JavaScript, HTML y CSS. Se utiliza la librería de estilos Bootstrap de manera local.
@@ -15,6 +15,8 @@ Se ha testado con éxito en diferentes tamaños de pantalla y la aplicación no 
 En esta versión se permite elegir entre 8 opciones la lista de ciudades con la que jugar. También se permite elegir el número de jugadores, pudiendo participar entre 2 y 16 personas.
 
 Tanto la lista de ciudades como el número de jugadores se guarda en el `localStorage`, pero se pueden volver a modificar en cualquier momento con una partida ya iniciada.
+
+Cuando la segunda ciudad empieza por sonido "i", en la pregunta la conjunción "y" se convierte en "e" para evitar la cacofonía. Por ejemplo, "y Ibiza" se convierte en "e Ibiza".
 
 
 ## 🎮 Jugar *online*

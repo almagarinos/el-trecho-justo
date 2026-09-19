@@ -12,6 +12,7 @@ const btnContinuar = document.querySelector('#botonContinuar');
 const dialogNumJugadores = document.querySelector('#dialogoNumJugadores');
 const dialogListaCiudades = document.querySelector('#dialogoListaCiudades');
 const btnConfirmar = document.querySelector('#botonConfirmar');
+const conjuncionYoE = document.getElementById("conjuncion");
 const paneldeJugadores = document.getElementById("panelJugadores");
 //const seleccionCiudades = ciudades; // Todas las disponibles en datos-ciudades.js
 // Lo siguiente es la alternativa a lo anterior, donde se hace un filtrado de ciudades
@@ -54,6 +55,15 @@ function calcularDistancia(latitud1, longitud1, latitud2, longitud2) {
 
   // Se devuelve la distancia lineal real sobre el terreno, en kilómetros y redondeada a una cifra sin decimales
   return Math.round(R * c);
+}
+
+
+
+// Sustituye la conjunción "y" por "e" para evitar la cacofonía si la inicial de siguiente ciudad suena a "i"
+function comprobarConjuncion(nombreCiudad){
+  if (nombreCiudad.substring(0,1) === 'I') {
+    conjuncionYoE.innerHTML = "e";
+  }
 }
 
 
@@ -102,6 +112,9 @@ function generarPregunta() {
     document.getElementById("ciudadA").textContent = `${ciudad1.nombre} (${ciudad1.pais})`;
     document.getElementById("ciudadB").textContent = `${ciudad2.nombre} (${ciudad2.pais})`;
   }
+
+  // Se deja la conjunción "y" o se cambia por "e" si hay cacofonía
+  comprobarConjuncion(ciudad2.nombre);
 
   // Procedemos al cálculo de la respuesta exacta
   distanciaCorrecta = calcularDistancia(
