@@ -5,7 +5,7 @@ Juego familiar, inspirado en el popular concurso de televisión "El Precio Justo
 Por tanto, cada jugador debe estimar la longitud entre dos puntos geográficos, en línea recta, sobre la superficie terrestre. Es decir, hay que calcular mentalmente la distancia más corta que volaría un dron desde el centro de una ciudad hasta el centro de la otra.
 
 
-## 📈 Versión 1.2.1
+## 📈 Versión 1.2.2
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000) ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff) ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)
 
 Esta es una versión estable del proyecto, desarrollada únicamente con tecnologías Front-End nativas: JavaScript, HTML y CSS. Se utiliza la librería de estilos Bootstrap de manera local.
@@ -251,7 +251,7 @@ En el ejemplo anterior, la base de datos se filtra para jugar solamente con ciud
 | `if (ciudades[i].esCapitalDePais)`          | Sólo capitales de país    |
 | `if (ciudades[i].coordenada.latitud >= 0)`  | Sólo del hemisferio norte |
 
-A partir de lo anterior, se pueden aplicar más combinaciones. El filtrado elegido por el jugador está fijado actualmente en estas 8 opciones:
+A partir de lo anterior, se pueden aplicar más posibilidades. El filtrado elegido por el jugador está fijado actualmente en estas 8 opciones:
 - España
 - Estados Unidos
 - Europa
@@ -260,3 +260,32 @@ A partir de lo anterior, se pueden aplicar más combinaciones. El filtrado elegi
 - África
 - Oceanía
 - El Mundo
+
+
+## 🎲 Combinaciones sin repetición
+
+Tras escoger la opción deseada, el número de preguntas posibles responde a la fórmula de las combinaciones ordinarias (no repetidas):
+
+```text
+C(n,r) = [n!] / [r! * (n-r)!], donde n > r
+```
+
+En este juego, como en la pregunta sólo se escogen dos ciudades, siempre se cumple que `r = 2`, y por ello, la fórmula queda simplificada en función del número de ciudades posibles:
+
+```text
+C(n,2) =
+= [n!] / [2! * (n-2)!] =
+= [n * (n-1) * (n-2)!] / [2 * (n-2)!] =
+= [n * (n-1)] / [2]
+```
+
+Por ejemplo, en un conjunto de 20 ciudades posibles (como el de África), `n = 20`, por tanto, en ese caso tendríamos 190 preguntas diferentes:
+
+```text
+C(20,2) =
+= [20 * (20-1)] / [2] =
+= (20 * 19) / 2 =
+= 20/2 * 19 =
+= 10 * 19 =
+= 190
+```
