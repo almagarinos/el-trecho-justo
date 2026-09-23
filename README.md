@@ -5,7 +5,7 @@ Juego familiar, inspirado en el popular concurso de televisión "El Precio Justo
 Por tanto, cada jugador debe estimar la longitud entre dos puntos geográficos, en línea recta, sobre la superficie terrestre. Es decir, hay que calcular mentalmente la distancia más corta que volaría un dron desde el centro de una ciudad hasta el centro de la otra.
 
 
-## 📈 Versión 1.2.2
+## 📈 Versión 1.2.3
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000) ![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff) ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)
 
 Esta es una versión estable del proyecto, desarrollada únicamente con tecnologías Front-End nativas: JavaScript, HTML y CSS. Se utiliza la librería de estilos Bootstrap de manera local.
@@ -69,6 +69,10 @@ el-trecho-justo/
 │
 ├── lists/
 │   └── ...                     # Listas de países según el filtro en la BD
+│
+├── LICENSE.md                  # Archivo de licencia MIT en formato Markdown
+│
+├── README.md                   # Archivo "Léeme" del proyecto en Markdown
 │
 └── index.html                  # Punto de entrada de la aplicación
 ```
