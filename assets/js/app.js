@@ -2,8 +2,18 @@
 let ciudad1;
 let ciudad2;
 let distanciaCorrecta;
-let datoLocalListaCiudades = localStorage.getItem("Lista de ciudades");
-let datoLocalNumJugadores = localStorage.getItem("Número de jugadores");
+let datoLocalTrechoJusto = JSON.parse(localStorage.getItem("el_trecho_justo"));
+
+if(!datoLocalTrechoJusto) { // Si no existe, todo se inicializa con valores equivalentes a false
+  datoLocalTrechoJusto = {
+    lista_ciudades: "", // String vacío, provoca selección de lista en elegirListaDeCiudades()
+    numero_jugadores: 0 // Cero jugadores, provoca indicación en elegirNumeroDeJugadores()
+  };
+  localStorage.setItem("el_trecho_justo", JSON.stringify(datoLocalTrechoJusto));
+}
+
+let datoLocalListaCiudades = datoLocalTrechoJusto.lista_ciudades;
+let datoLocalNumJugadores = datoLocalTrechoJusto.numero_jugadores;
 let NUM_JUGADORES; // Número total de jugadores, puede variar en la partida
 const campoResultado = document.getElementById("cuadroResultado");
 const dialogAvisos = document.querySelector('#dialogoAvisos');
@@ -262,7 +272,9 @@ function crearPartida() {
     return;
   }
 
-  localStorage.setItem("Número de jugadores",numeroJugadores);
+  // Actualizamos ese número en el objeto del localStorage
+  datoLocalTrechoJusto.numero_jugadores = numeroJugadores;
+  localStorage.setItem("el_trecho_justo", JSON.stringify(datoLocalTrechoJusto));
 
   // Asignamos ese número a la variable global
   NUM_JUGADORES = numeroJugadores;
